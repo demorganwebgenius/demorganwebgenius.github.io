@@ -1,0 +1,116 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.main_head .header_wrapper h1{
+		font-size: 38px;
+	}
+	.main_head .header_wrapper h1:after {
+		width: 80px;
+		margin-left: -40px;
+		margin-top: 70px;
+	}
+	.main_head .header_wrapper p {
+		font-size: 14px;
+	}
+	.main_head .logo_container {
+		margin-top: 240px;
+	}
+	
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main_head .header_wrapper h1{
+		font-size: 26px;
+		letter-spacing: 3px
+	}
+	.main_head .header_wrapper h1:after {
+		width: 60px;
+		margin-left: -30px;
+		margin-top: 50px;
+	}
+	.main_head .header_wrapper p {
+		font-size: 16px;
+		letter-spacing: 2px;
+	}
+	.main_head .logo_container {
+		margin-top: 180px;
+	}
+}
+	.main_head {
+		min-height: 320px
+	}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	.main_head .logo_container {
+		margin-top: 150px;
+	}
+	.main_navbar .navbar_wrap a {
+		padding: 15px 5px;
+		font-size: 14px
+	}
+
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}

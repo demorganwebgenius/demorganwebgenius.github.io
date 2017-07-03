@@ -1,0 +1,17 @@
+@font-face {
+  font-family: "RobotoRegular";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"); }
+
+/*# sourceMappingURL=fonts.css.map */
+
+@font-face {
+			font-family: "ArchiveRegular";
+			src: url("../fonts/ArchiveRegular/ArchiveRegular.eot");
+			src: url("../fonts/ArchiveRegular/ArchiveRegular.eot?#iefix")format("embedded-opentype"),
+			url("../fonts/ArchiveRegular/ArchiveRegular.woff") format("woff"),
+			url("../fonts/ArchiveRegular/ArchiveRegular.ttf") format("truetype");
+			font-style: normal;
+			font-weight: normal;
+	}
