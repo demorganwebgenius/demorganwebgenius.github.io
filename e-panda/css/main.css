@@ -156,15 +156,12 @@ section {
     text-transform: uppercase;
     font-size: 32px;
     padding-top: 100px; }
-  section .section_wrap h2 {
-    padding-top: 100px;
-    font-size: 32px; }
   section .section_wrap h3 {
     padding-top: 50px;
     font-size: 26px; }
 
 .advantages {
-  background: url("../img/adv.png") no-repeat center top; }
+  background: url("../img/advanced.jpg") no-repeat center top; }
   .advantages .section_wrap {
     color: #222; }
     .advantages .section_wrap .ul_left {
@@ -192,7 +189,7 @@ section {
           color: #006C64; }
 
 .goods {
-  background: url("../img/goods.png") no-repeat center top; }
+  background: url("../img/goods.jpg") no-repeat center top; }
   .goods .section_wrap {
     color: #FAFAFA; }
     .goods .section_wrap ul,
