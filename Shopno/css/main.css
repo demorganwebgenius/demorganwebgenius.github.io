@@ -273,29 +273,31 @@ section h4 {
   background-color: #fff; }
   .s_team .s_team_wrap .s_team_header {
     text-align: center; }
-  .s_team .s_team_wrap .content_wrap .col-md-4 {
-    padding: 8px;
-    position: relative; }
-    .s_team .s_team_wrap .content_wrap .col-md-4 img {
-      width: 100%; }
-  .s_team .s_team_wrap .content_wrap .img_descr {
-    display: none;
-    background-image: url("../img/team_img/comment.png");
-    background-repeat: no-repeat;
-    margin: 0 18px;
-    position: absolute;
-    bottom: 26px; }
-    .s_team .s_team_wrap .content_wrap .img_descr h4 {
-      margin: 55px 0 20px 40px; }
-      .s_team .s_team_wrap .content_wrap .img_descr h4 span {
-        font-family: "Merriweather-Regular", sans-serif;
-        font-size: 15px;
-        text-transform: none;
-        font-style: italic;
-        color: #7e7979; }
-    .s_team .s_team_wrap .content_wrap .img_descr p {
-      margin: 0 40px 24px 40px;
-      color: #545454; }
+  .s_team .s_team_wrap .content_wrap {
+    margin-bottom: 150px; }
+    .s_team .s_team_wrap .content_wrap .col-md-4 {
+      padding: 8px;
+      position: relative; }
+      .s_team .s_team_wrap .content_wrap .col-md-4 img {
+        width: 100%; }
+    .s_team .s_team_wrap .content_wrap .img_descr {
+      display: none;
+      background-image: url("../img/team_img/comment.png");
+      background-repeat: no-repeat;
+      margin: 0 18px;
+      position: absolute;
+      bottom: 26px; }
+      .s_team .s_team_wrap .content_wrap .img_descr h4 {
+        margin: 55px 0 20px 40px; }
+        .s_team .s_team_wrap .content_wrap .img_descr h4 span {
+          font-family: "Merriweather-Regular", sans-serif;
+          font-size: 15px;
+          text-transform: none;
+          font-style: italic;
+          color: #7e7979; }
+      .s_team .s_team_wrap .content_wrap .img_descr p {
+        margin: 0 40px 24px 40px;
+        color: #545454; }
 
 .s_reviews {
   min-height: 650px;
