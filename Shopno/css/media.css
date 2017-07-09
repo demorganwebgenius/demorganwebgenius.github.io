@@ -1,16 +1,134 @@
 /*==========  Desktop First Method  ==========*/
 
-/* Large Devices, Wide Screens */
+/* MD-MEDIUM (992-1200)*/
 @media only screen and (max-width : 1200px) {
-
+	.s_about	.s_about_wrap	h4 {
+		margin-left: 30px;
+		letter-spacing: 0.02em;
+	}
+	.s_about	.s_about_wrap	p {
+		margin-left: 30px;
+		letter-spacing: 0.02em;
+		margin-right: 30px;
+	}
+	.s_about	.s_about_wrap .content_wrap .slider .rectangle {
+		display: none;
+	}
+	.s_about	.s_about_wrap .content_wrap .slider .slide_wrap {
+		margin: 0;
+	}	
+	.s_about	.s_about_wrap .content_wrap .slider {
+		margin: 0;
+		padding-right: 0;
+	}		
+	.s_team .s_team_wrap .content_wrap .container .img_descr {
+		bottom: 20px;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr h4 {
+		margin: 30px 0 20px 20px;
+		font-size: 18px;
+		letter-spacing: 0.02em;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr p {
+		margin: 0 40px 5px 20px;
+		letter-spacing: 0.02em;
+		line-height: 24px;
+	}
 }
 
-/* Medium Devices, Desktops */
+/* SM-SMALL (768-992)*/
 @media only screen and (max-width : 992px) {
+	.s_about	.s_about_wrap .content_wrap .slider {
+		padding: 0 30px;
+	}
+	.s_about	.s_about_wrap	.slider_text {
+		margin-top: 100px;
+	}
+		
+	.s_about	.s_about_wrap .content_wrap .slider .owl-dots {
+		margin-left: 170px;
+	}
 
+	.s_team .s_team_wrap .content_wrap .container .img_descr {
+		bottom: 20px;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr h4 {
+		margin: 30px 0 10px 20px;
+		font-size: 16px;
+		letter-spacing: 0.02em;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr p {
+		margin: 0 40px 5px 20px;
+		letter-spacing: 0.02em;
+		line-height: 20px;
+		font-size: 14px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap {
+		margin-left: 0;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap .slider .rectangle {
+		display: none;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slider .slide_wrap {
+		width: 140px;
+
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text {
+		top: 0;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text {
+		top: 0;
+		height: 200px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text h4 {
+		margin-top: 20px;
+		font-size: 18px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text p {
+		margin: 10px 0 0 0;
+		font-size: 16px;
+		letter-spacing: 0.02em;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .nav_buttons .nav_button {
+		width: 34px;
+		height: 34px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .nav_buttons .nav_button_left {
+		right: 70px;
+		top: 210px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .nav_buttons .nav_button_right {
+		right: 20px;
+		top: 210px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap .slider .owl-dots {
+		margin-top: -237px;
+		margin-left: 15px;
+	}
+	.s_partners {
+		min-height: 200px;
+	}
+
+	.main_footer .footer_wrap .contact_wrap .container .main_form,
+	.main_footer .footer_wrap .contact_wrap .container .contact_map {
+		margin-top: 50px;
+	}
+	.main_footer .footer_wrap .contact_wrap .container .main_form {
+		/*padding: 50px 36px 40px;*/
+		margin-right: 0;
+	}
+	.main_footer .footer_wrap .contact_wrap .container .contact_map {
+		text-align: center;
+	}
+	.main_footer .footer_wrap .contact_wrap .container .contact_map p {
+		font-size: 20px;
+	}
+	.main_footer .footer_wrap .contact_wrap .container .contact_map .map_wrap {
+		margin: 30px auto;
+	}
 }
 
-/* Small Devices, Tablets */
+/* XS-EXTRA-SMALL (480-768)*/
 @media only screen and (max-width : 768px) {
 
 	/*Disable Animation on Mobile Devices*/
@@ -34,13 +152,25 @@
 		-ms-animation: none !important;
 		animation: none !important;
 	}
-
+	
+	h1,h2,h3 {
+		letter-spacing: 0.02em;
+	}	
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 30px;
+		margin-top: 80px;
+	}	
+	h3 {
+		font-size: 16px;
+	}
+	section .content_wrap {
+		margin-top: 30px;
+	}
 	.main_header .header_text {
 		margin-top: 100px;
-	}
-	.main_header .header_text h1 {
-		font-size: 32px;
-		letter-spacing: 0.02em;
 	}
 	.main_header .cup_wrap .cup {
 		height: 78px;
@@ -49,17 +179,117 @@
 		position: relative;
 		margin: 120px auto;
 	}
+	.s_about	.s_about_wrap .content_wrap {
+		margin: 30px 0;
+	}
+	.s_works .s_works_wrap .content_wrap {
+			margin-top: 30px;
+		}
+	.s_about	.s_about_wrap .content_wrap .slider	.slide_wrap {
+		width: 100%;
+		height: 100%;
+	}
+	.s_about	.s_about_wrap .content_wrap .slider	.owl-dots {
+		display: none;
+	}
 
+	.s_team .s_team_wrap .content_wrap .container .img_descr {
+		bottom: 20px;
+		max-width: 350px;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr h4 {
+		margin: 40px 0 20px 40px;
+		font-size: 18px;
+		letter-spacing: 0.06em;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr p {
+		margin: 0 40px 20px 40px;
+		letter-spacing: 0.06em;
+		line-height: 20px;
+		font-size: 16px;
+	}
+
+	.s_reviews .s_reviews_wrap .content_wrap  .slider .slide_wrap {
+		width: 50px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text {
+		padding: 5px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text h4 {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		font-size: 16px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text p {
+		letter-spacing: 0;
+		line-height: 18px
+	}
+	.s_reviews .s_reviews_wrap .content_wrap .slider .owl-dots {
+		display: none;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap {
+		margin-top: 30px;
+	}
 }
 
-/* Extra Small Devices, Phones */
+/* XS-OMG (320-480)*/
 @media only screen and (max-width : 480px) {
+	h1,h2,h3 {
+		letter-spacing: 0.01em;
+	}	
+	h1 {
+		font-size: 26px;
+	}
+	h2 {
+		font-size: 22px;
+		margin-top: 30px;
+	}	
+	h3 {
+		font-size: 16px;
+	}
 	.main_header .header_text h1 {
 		font-size: 22px;
 		letter-spacing: 0.01em;
 	}
 	.main_header .header_text h1 span {
 		padding: 0 2px;
+	}
+	.col-xs-offset-2 {
+		margin-left: 0;
+	}		
+	.col-xs-8 {
+	    width: 100%;
+	}
+
+	.s_team .s_team_wrap .content_wrap .container .img_descr h4 {
+		margin: 40px 0 20px 20px;
+		font-size: 18px;
+		letter-spacing: 0.06em;
+	}
+	.s_team .s_team_wrap .content_wrap .container .img_descr p {
+		margin: 0 30px 20px 20px;
+		letter-spacing: 0.06em;
+		line-height: 20px;
+		font-size: 16px;
+	}
+
+	.s_reviews .s_reviews_wrap .content_wrap  .slider {
+		display: none;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap .bot_slider_text_wrap {
+		width: 100%;
+		margin: 0 -15px;
+	}
+	.s_reviews .s_reviews_wrap .content_wrap  .slide_text {
+		padding: 2px;
+	}	
+	.s_services .s_services_wrap .content_wrap .container .row div .img_wrap {
+		padding: 15px;
+		overflow: hidden;
+	}
+	.s_services .s_services_wrap .content_wrap .container .row div .img_wrap h4 {
+		margin-bottom: 30px;
+		margin-top: 80px;
 	}
 }
 

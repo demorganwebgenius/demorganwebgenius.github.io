@@ -3,6 +3,7 @@
 $text_h1: #505050
 $text_h2: #343434
 $text_h3: #888888
+$special_color: #81D8D0
 
 html.js .loader
 	background: none repeat scroll 0 0 #ffffff
@@ -86,7 +87,7 @@ h3
 	transition: all .4s ease
 	&:hover
 		box-shadow: 4px 4px 5px 0px rgba(0,0,0,0.1)
-		background-color: rgba(113,246,235,.5)
+		
 
 //----------Header----------//
 .main_header
@@ -104,7 +105,7 @@ h3
 			letter-spacing: 0.06em
 			span
 				font-size: 21px
-				color: #77efe5
+				color: $special_color
 	.header_text
 		margin-top: 200px
 		+animation-delay(.7s)
@@ -112,7 +113,7 @@ h3
 			text-shadow: 6px 6px 10px rgba(0,0,0,.25)
 			line-height: 1.35
 			span
-				background-color: #b2f2ee
+				background-color: $special_color
 				padding: 0 14px
 				margin: 0 -5px
 	.button_wrap
@@ -121,12 +122,15 @@ h3
 		.button
 			font-family: "Montserrat-Regular", sans-serif
 			font-size: 18px
-			border: 2px solid #777879
+			border: 2px solid $special_color
 			display: inline-block
 			padding: 11px 52px
 			text-align: center
 			text-transform: uppercase
 			color: #777879
+			&:hover
+				background-color: $special_color
+				color: #fff
 	.cup_wrap
 		position: relative
 		.cup
@@ -176,9 +180,8 @@ section
 			margin-left: 40px
 			.slider
 				margin: -13px
-				position: relative
 				padding-right: 160px
-				img
+				.slide_wrap
 					width: 392px
 					height: 484px
 					margin: 13px
@@ -201,17 +204,18 @@ section
 						margin: 0 4px
 						border-radius: 50%
 						&.active
-							background-color: #71f6eb
+							background-color: $special_color
 				.owl-item.active
 					img
 						box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.13)
 .s_works
-	min-height: 1165px
+	min-height: 600px
 	background-color: #fff
 	.s_works_wrap
 		.s_works_header
 			text-align: center
 		.content_wrap
+			margin-bottom: 50px
 			.col-md-4
 				padding: 8px
 				img
@@ -272,9 +276,7 @@ section
 							background-size: cover
 							padding: 55px
 						&:hover
-							background-color: #71f6eb
-
-
+							background-color: $special_color
 						h4
 							color: #f9f9f9
 							margin-bottom: 40px
@@ -289,7 +291,7 @@ section
 								color: #d9dada
 								text-decoration: none
 .s_team
-	min-height: 1315px
+	min-height: 600px
 	background-color: #fff
 	.s_team_wrap
 		.s_team_header
@@ -300,28 +302,27 @@ section
 				position: relative
 				img
 					width: 100%
-				.img_descr
-					display: none
-					background-image: url('../img/team_img/comment.png')
-					width: 335px
-					height: 260px
-					margin: 0 18px
-					position: absolute
-					bottom: 26px
-					h4
-						margin: 55px 0 20px 40px
-						span
-							font-family: "Merriweather-Regular", sans-serif
-							font-size: 15px
-							text-transform: none
-							font-style: italic
-							color: #7e7979
-					p
-						margin: 0 40px 24px 40px
-						color: #545454
+			.img_descr
+				display: none
+				background-image: url('../img/team_img/comment.png')
+				background-repeat: no-repeat
+				margin: 0 18px
+				position: absolute
+				bottom: 26px
+				h4
+					margin: 55px 0 20px 40px
+					span
+						font-family: "Merriweather-Regular", sans-serif
+						font-size: 15px
+						text-transform: none
+						font-style: italic
+						color: #7e7979
+				p
+					margin: 0 40px 24px 40px
+					color: #545454
 
 .s_reviews
-	min-height: 984px
+	min-height: 650px
 	background-color: #f8fafa
 	.s_reviews_wrap
 		.s_reviews_header
@@ -339,7 +340,7 @@ section
 			.slider
 				margin: -13px
 				position: relative
-				img
+				.slide_wrap
 					width: 335px
 					height: 410px
 					margin: 13px
@@ -354,6 +355,7 @@ section
 				.owl-dots 
 					margin-top: 40px
 					margin-left: 106px
+					margin-bottom: 50px
 					.owl-dot 
 						width: 14px
 						height: 14px
@@ -362,7 +364,7 @@ section
 						margin: 0 4px
 						border-radius: 50%
 						&.active
-							background-color: #71f6eb
+							background-color: $special_color
 				.owl-item.active
 					img
 						box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.13)
@@ -405,14 +407,14 @@ section
 				top: 405px
 				background-image: url("../img/slider_arrow_left.png")
 				&:hover
-					background-color: #71f6eb
+					background-color: $special_color
 					background-image: url("../img/slider_arrow_left_hover.png")
 			.nav_button_right
 				right: -15px
 				top: 405px
 				background-image: url("../img/slider_arrow_right.png")
 				&:hover
-					background-color: #71f6eb
+					background-color: $special_color
 					background-image: url("../img/slider_arrow_right_hover.png")
 .s_partners
 	min-height: 385px
@@ -473,7 +475,7 @@ section
 						padding: 20px 40px
 						text-align: center
 						text-transform: uppercase
-						background-color: #6eeee4
+						background-color: $special_color
 						color: #4a5962
 						letter-spacing: 0.12em
 						transition: all .4s ease
@@ -520,7 +522,7 @@ section
 					height: 40px
 					padding: 10px
 					&:hover
-						background-color: #71f6eb
+						background-color: $special_color
 						color: #333
 						transition: all .25s ease
 

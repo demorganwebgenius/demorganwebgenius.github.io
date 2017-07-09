@@ -25,7 +25,7 @@ $(function() {
 		responsive : {
 					0 : {
 						items : 1,
-						autoplay: true,
+						//autoplay: true,
 						autoplayTimeout: 5000,
 						loop: true,
 					}
