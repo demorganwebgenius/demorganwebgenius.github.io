@@ -82,6 +82,24 @@ img.scroll
 	bottom: -100%
 	right: 0
 	z-index: 1
+
+//-----Comment Slider-----//
+.comment_slider
+	.owl-carousel
+		.owl-dots
+			position: absolute
+			top: -6px
+			bottom: 0
+			left: 0
+			right: 0
+			margin: auto
+			.owl-dot
+				margin: 30px 4px
+				background-image: url("../img/testimonials/slider_dot.png")
+				width: 11px
+				height: 11px
+				&.active
+					background-image: url("../img/testimonials/slider_dot_active.png")
 //-----Header-----//
 .logo_wrap
 	padding: 20px 0
@@ -269,21 +287,7 @@ section
 				font-style: italic
 				letter-spacing: 0.1em
 				margin-top: 30px
-		.owl-carousel
-			.owl-dots
-				position: absolute
-				top: -6px
-				bottom: 0
-				left: 0
-				right: 0
-				margin: auto
-				.owl-dot
-					margin: 30px 4px
-					background-image: url("../img/testimonials/slider_dot.png")
-					width: 11px
-					height: 11px
-					&.active
-						background-image: url("../img/testimonials/slider_dot_active.png")
+		
 					
 .s_skills
 	padding-top: 200px
@@ -293,6 +297,7 @@ section
 	background-image: url("../img/stats/bg_stats.jpg")
 	background-size: cover
 	color: $light
+	position: relative
 	.icon
 		margin-top: 75px
 	.number
@@ -311,3 +316,41 @@ section
 		font-weight: 600
 		margin-top: 10px
 		line-height: 1
+.s_news
+	padding-top: 200px
+.s_ribbon
+	background-image: url("../img/ribbon/bg_ribbon.jpg")
+	color: $light
+	position: relative
+.s_team
+	padding-top: 200px
+.s_clients
+	background-image: url("../img/clients/bg_clients.jpg")
+	color: $light
+	position: relative
+	background-size: cover
+	.slider_wrap 
+		position: relative
+		.slide 
+			margin-top: 65px
+			.quote
+				line-height: 28px
+				letter-spacing: 0.05em
+				font-size: 24px
+			.quote_icon
+				width: 15px
+				display: inline-block
+			.autor
+				display: inline-block
+				font-family: "OpenSans"
+				font-size: 14px
+				font-weight: 100
+				font-style: italic
+				letter-spacing: 0.1em
+				margin-top: 30px
+
+.s_callback
+	padding-top: 200px
+.main_footer
+	background-color: $dark
+	color: $light

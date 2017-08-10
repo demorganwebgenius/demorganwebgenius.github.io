@@ -34,7 +34,6 @@ $(function() {
 		$(this).attr('src', bgi);
 	});
 	//Testimonials Slider
-
 	$(".s_testimonials .slider_wrap .owl-carousel").owlCarousel({
 		responsive : {
 					0 : {
@@ -47,6 +46,19 @@ $(function() {
 					}
 				}
 	});
+	//Clients Slider
+		$(".s_clients .slider_wrap .owl-carousel").owlCarousel({
+			responsive : {
+						0 : {
+							items : 1,
+							autoplay: true,
+							autoplayTimeout: 5000,
+							loop: true,
+							dots: true,
+							dotsData: true
+						}
+					}
+		});
 	
 	//SVG Fallback
 	if(!Modernizr.svg) {
