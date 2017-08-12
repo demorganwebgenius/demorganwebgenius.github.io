@@ -262,6 +262,131 @@ section
 .s_portfolio
 	min-height: 600px
 	padding-top: 200px
+	.grid_wrap
+		position: relative
+		margin: 0 -15px
+		min-height: 1200px
+		.block
+			height: 369px
+		//margin-top: 75px
+		.overlay_rot
+			//display: none
+			transform: rotate(45deg)
+			width: 260px
+			height: 260px
+			margin: auto
+			z-index: 1
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+			&:hover .holder
+				display: block
+			.holder
+				position: absolute
+				display: none
+				transform: rotate(-45deg)
+				z-index: 1
+				top: 197px
+				left: 196px
+				width: 75px
+				height: 75px
+				background-image: url("../img/portfolio/overlay_btn.png")
+				&:hover
+					background-image: url("../img/portfolio/overlay_btn_hover.png")
+		.overlay
+			display: none
+			h4
+				font-family: "Exo2Black"
+				font-size: 24px
+				line-height: 22px
+				letter-spacing: 0.05em
+				color: $light
+				text-transform: uppercase
+				margin-top: 175px
+			.separator
+				margin: 15px 0
+			
+		figure
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+		.top_block
+			.block_1
+				top: 0
+				bottom: 0
+				left: 0
+				right: 800px
+			.block_2
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+			.block_3
+				top: 0
+				bottom: 0
+				left: 800px
+				right: 0
+		.left_block
+			.block_4
+				top: 200px
+				bottom: 0
+				left: 0
+				right: 400px
+			.block_5
+				top: 400px
+				bottom: 0
+				left: 0
+				right: 800px
+			.block_6
+				top: 600px
+				bottom: 0
+				left: 0
+				right: 400px
+		.middle_block
+			.block_7
+				top: 400px
+				bottom: 0
+				left: 0
+				right: 0
+		.right_block
+			.block_8
+				top: 200px
+				bottom: 0
+				left: 400px
+				right: 0
+			.block_9
+				top: 400px
+				bottom: 0
+				left: 800px
+				right: 0
+			.block_10
+				top: 600px
+				bottom: 0
+				left: 400px
+				right: 0
+		.bottom_block
+			.block_11
+				top: 800px
+				bottom: 0
+				left: 0
+				right: 800px
+			.block_12
+				top: 800px
+				bottom: 0
+				left: 0
+				right: 0
+			.block_13
+				top: 800px
+				bottom: 0
+				left: 800px
+				right: 0			
+
+
+
 .s_testimonials
 	min-height: 400px
 	background-image: url("../img/testimonials/bg_testimonials.jpg")
@@ -287,7 +412,6 @@ section
 				font-style: italic
 				letter-spacing: 0.1em
 				margin-top: 30px
-		
 					
 .s_skills
 	padding-top: 200px
@@ -322,8 +446,99 @@ section
 	background-image: url("../img/ribbon/bg_ribbon.jpg")
 	color: $light
 	position: relative
+	.slider_wrap 
+		position: relative
+		.slide 
+			margin-top: 65px
+			.quote
+				line-height: 22px
+				letter-spacing: 0.06em
+				font-size: 24px
+			.quote_icon
+				width: 15px
+				display: inline-block
+			.autor
+				display: inline-block
+				font-family: "OpenSans"
+				font-size: 14px
+				font-weight: 100
+				line-height: 22px
+				font-style: italic
+				letter-spacing: 0.1em
+				margin-top: 30px
+				.autor_name
+					color: #1ab4ef
+				.autor_hash
+					color: #a1a1a1
+				.autor_time
+					letter-spacing: 0.075em
+					color: #7c7c7c
 .s_team
 	padding-top: 200px
+	.team_wrap
+		position: relative
+		margin-top: 75px
+		.overlay
+			display: none
+			width: 269px
+			height: 269px
+			margin: -269px -7px 0
+			.holder
+				position: absolute
+				display: block
+				width: 75px
+				height: 75px
+				background-image: url("../img/team/overlay/bg_icon.png")
+				&:hover
+					background-image: url("../img/team/overlay/bg_icon_hover.png")
+				i	
+					font-size: 25px
+					margin-top: 34%
+					color: $light
+			.icon_left
+				top: 0
+				bottom: 85px
+				left: 0
+				right: 80px
+				margin: auto
+			.icon_right
+				top: 0
+				bottom: 85px
+				left: 80px
+				right: 0
+				margin: auto
+			.icon_bottom
+				top: 194px
+				bottom: 100%
+				left: 0
+				right: 0
+				margin: 0 auto
+		.photo
+			margin: 0 -7px
+			cursor: pointer
+		.role
+			margin-top: 15px
+			font-family: "Exo2Black"
+			font-size: 15px
+			letter-spacing: 0.015em
+			color: $special
+		.name
+			font-family: "Exo2Black"
+			font-size: 24px
+			text-transform: uppercase
+			letter-spacing: 0.01em
+			color: $dark
+		.separator
+			margin: 15px 0
+		.sub_title
+			font-family: "OpenSans"
+			font-size: 14px
+			line-height: 20px
+			letter-spacing: 0.06em
+
+
+
+
 .s_clients
 	background-image: url("../img/clients/bg_clients.jpg")
 	color: $light
@@ -334,20 +549,11 @@ section
 		.slide 
 			margin-top: 65px
 			.quote
-				line-height: 28px
-				letter-spacing: 0.05em
-				font-size: 24px
-			.quote_icon
-				width: 15px
-				display: inline-block
-			.autor
-				display: inline-block
-				font-family: "OpenSans"
+				line-height: 22px
+				letter-spacing: 0.06em
 				font-size: 14px
-				font-weight: 100
-				font-style: italic
-				letter-spacing: 0.1em
-				margin-top: 30px
+	.s_clients_logo
+		margin-top: 90px	
 
 .s_callback
 	padding-top: 200px

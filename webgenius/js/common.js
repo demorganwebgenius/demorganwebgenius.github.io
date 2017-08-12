@@ -33,6 +33,19 @@ $(function() {
 		var bgi = 'img/plus_button.png';
 		$(this).attr('src', bgi);
 	});
+	//Portfolio Overlay
+	$(".s_portfolio .grid_wrap .overlay_rot").mouseover(function() {
+		$(this).siblings('.overlay').show();
+		var src = $(this).siblings('.item').attr("src");
+		src = src.substr(0,26) + "_hover.png";
+		$(this).siblings('.item').attr("src", src);
+	});
+	$('.s_portfolio .grid_wrap .overlay_rot').mouseout(function() {
+		$(this).siblings('.overlay').hide();
+		var src = $(this).siblings('.item').attr("src");
+		src = src.substr(0,26) + ".png";
+		$(this).siblings('.item').attr("src", src);
+	});
 	//Testimonials Slider
 	$(".s_testimonials .slider_wrap .owl-carousel").owlCarousel({
 		responsive : {
@@ -46,6 +59,19 @@ $(function() {
 					}
 				}
 	});
+	//Ribbon Slider
+		$(".s_ribbon .slider_wrap .owl-carousel").owlCarousel({
+			responsive : {
+						0 : {
+							items : 1,
+							autoplay: true,
+							autoplayTimeout: 5000,
+							loop: true,
+							dots: true,
+							dotsData: true
+						}
+					}
+		});
 	//Clients Slider
 		$(".s_clients .slider_wrap .owl-carousel").owlCarousel({
 			responsive : {
@@ -59,7 +85,23 @@ $(function() {
 						}
 					}
 		});
-	
+	//Clients logos hover
+	$(".s_clients .s_clients_logo").hover(function() {
+		var src = $(this).attr("src");
+		src = src.substr(0,24) + "_hover.png";
+		$(this).attr("src", src);
+	}, function() {
+		var src = $(this).attr("src");
+		src = src.substr(0,24) + ".png";
+		$(this).attr("src", src);
+	});
+	//Team Social Hover
+	$(".s_team .photo").mouseover(function() {
+		$(this).children('.overlay').show();
+	});
+	$('.s_team .photo').mouseout(function() {
+		$(this).children('.overlay').hide();
+	});
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
