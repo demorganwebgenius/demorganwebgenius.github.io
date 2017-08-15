@@ -5,8 +5,8 @@ $(function() {
 		responsive : {
 					0 : {
 						items : 1,
-						autoplay: true,
-						autoplayTimeout: 5000,
+						//autoplay: true,
+						//autoplayTimeout: 5000,
 						nav: true,
 						navText: ["<img src='img/left_arrow.png'>","<img src='img/right_arrow.png'>"],
 						loop: true,
@@ -34,13 +34,13 @@ $(function() {
 		$(this).attr('src', bgi);
 	});
 	//Portfolio Overlay
-	$(".s_portfolio .grid_wrap .overlay_rot").mouseover(function() {
+	$(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseover(function() {
 		$(this).siblings('.overlay').show();
 		var src = $(this).siblings('.item').attr("src");
 		src = src.substr(0,26) + "_hover.png";
 		$(this).siblings('.item').attr("src", src);
 	});
-	$('.s_portfolio .grid_wrap .overlay_rot').mouseout(function() {
+	$(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseout(function() {
 		$(this).siblings('.overlay').hide();
 		var src = $(this).siblings('.item').attr("src");
 		src = src.substr(0,26) + ".png";
@@ -108,7 +108,9 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-
+	//Scroll2id
+	$(".top_navbar .navbar_wrap ul a").mPageScroll2id();
+	$("section  .scroll2id").mPageScroll2id();
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("form").submit(function() { //Change
