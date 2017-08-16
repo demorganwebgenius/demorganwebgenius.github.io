@@ -77,6 +77,13 @@ h1
 	margin: 0 4px
 	line-height: 30px
 
+.logo_wrap
+	display: table
+	img
+		display: table-cell
+	h1
+		display: table-cell
+		vertical-align: middle
 img.scroll
 	width: 5%
 	margin: auto
@@ -116,8 +123,6 @@ img.scroll
 		box-sizing: border-box
 	.logo_wrap
 		padding: 20px 0
-		img
-			display: inline-block
 	.navbar_wrap
 		ul
 			list-style-type: none
@@ -183,21 +188,18 @@ img.scroll
 					right: 0
 					bottom: 0
 					margin: auto
-					.main_slide_img
-						width: 150px
-						height: 146px
-						display: inline-block
-						margin-top: 200px
-					.main_slide_name
-						display: inline-block
-						color: $light
-						font-family: "Exo2Black"
-						font-size: 60px
-						text-transform: uppercase
-						vertical-align: middle
-						margin: 0 10px
-						letter-spacing: 0.06em
-						margin-top: 200px
+					.logo_wrap
+						margin: 200px auto 0
+						.main_slide_img
+							width: 150px
+							height: 146px
+							margin: 0 10px
+						h1.main_slide_name
+							color: $light
+							font-family: "Exo2Black"
+							font-size: 60px
+							text-transform: uppercase
+							letter-spacing: 0.06em
 					.main_slide_descr
 						color: $light
 						font-family: "Exo2EL"
@@ -302,16 +304,13 @@ section
 	background-size: cover
 	color: $light
 	position: relative
-	.logo
-		display: inline-block
-		margin-top: 40px
-	h1
-		display: inline-block
-		float: none
-		vertical-align: middle
-		line-height: 31px
-		margin-top: 40px
-		color: #bcbcbc
+	.logo_wrap
+		margin: 40px auto 0
+		.logo
+			margin: 0 5px
+		h1
+			line-height: 31px
+			color: #bcbcbc
 	.icon
 		display: inline-block
 		width: 75px
@@ -759,14 +758,13 @@ section
 		padding: 20px 0
 		margin: 0 auto
 		img
-			display: inline-block
-		p
-			font-family: "OpenSans"
-			font-weight: 100
-			color: #a3a3a3
-			font-size: 11px
-			letter-spacing: 0.1em
-			margin-top: 20px
+			margin: 0 5px
+	p
+		font-family: "OpenSans"
+		font-weight: 100
+		color: #a3a3a3
+		font-size: 11px
+		letter-spacing: 0.1em
 	.icon
 		display: inline-block
 		width: 75px
