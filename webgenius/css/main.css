@@ -63,7 +63,7 @@ body textarea:required:valid {
   background-color: #f5f5f5; }
 
 h1 {
-  font-family: "Exo2Black";
+  font-family: "ProximaNovaBlack", sans-serif;
   font-size: 23px;
   text-transform: uppercase;
   display: inline-block;
@@ -121,7 +121,7 @@ img.scroll {
   .main_header .navbar_wrap ul li {
     display: inline-block;
     line-height: 30px;
-    font-family: "Exo2Black";
+    font-family: "ProximaNovaBlack", sans-serif;
     font-size: 15px;
     text-transform: uppercase;
     box-sizing: border-box;
@@ -179,20 +179,20 @@ img.scroll {
           margin: 0 10px; }
         .main_header .main_slider .slider_wrap .slider_descr .main_slide .logo_wrap h1.main_slide_name {
           color: #f5f5f5;
-          font-family: "Exo2Black";
+          font-family: "ProximaNovaBlack", sans-serif;
           font-size: 60px;
           text-transform: uppercase;
           letter-spacing: 0.06em; }
       .main_header .main_slider .slider_wrap .slider_descr .main_slide .main_slide_descr {
         color: #f5f5f5;
-        font-family: "Exo2EL";
+        font-family: "ProximaNovaLight", sans-serif;
         font-size: 25px;
         text-transform: uppercase;
         margin: 50px 0 0;
         letter-spacing: 0.02em; }
       .main_header .main_slider .slider_wrap .slider_descr .main_slide .main_slide_phone {
         color: #f5f5f5;
-        font-family: "Exo2EL";
+        font-family: "ProximaNovaLight", sans-serif;
         font-size: 20px;
         text-transform: uppercase;
         margin: 40px 0 0;
@@ -244,18 +244,18 @@ section {
   padding-bottom: 170px;
   text-align: center; }
   section h2 {
-    font-family: "Exo2Black";
+    font-family: "ProximaNovaBlack", sans-serif;
     font-size: 48px;
     letter-spacing: 0.03em;
     text-transform: uppercase; }
   section h3 {
-    font-family: "Exo2Black";
+    font-family: "ProximaNovaBlack", sans-serif;
     font-size: 24px;
     letter-spacing: 0.01em;
     text-transform: uppercase;
     font-weight: normal; }
   section p {
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
     font-size: 14px;
     letter-spacing: 0.06em;
     line-height: 22px; }
@@ -349,7 +349,7 @@ section {
     display: none; }
     .s_portfolio .grid_wrap .overlay h4,
     .s_news .grid_wrap .overlay h4 {
-      font-family: "Exo2Black";
+      font-family: "ProximaNovaBlack", sans-serif;
       font-size: 24px;
       line-height: 22px;
       letter-spacing: 0.05em;
@@ -457,7 +457,7 @@ section {
         display: inline-block; }
       .s_testimonials .slider_wrap .slide .autor {
         display: inline-block;
-        font-family: "OpenSans";
+        font-family: "OpenSans", sans-serif;
         font-size: 14px;
         font-weight: 100;
         font-style: italic;
@@ -476,14 +476,14 @@ section {
   .s_stats .icon {
     margin-top: 75px; }
   .s_stats .number {
-    font-family: "Exo2Black";
+    font-family: "ProximaNovaBlack", sans-serif;
     font-size: 55px;
     letter-spacing: 0;
     color: #cd2929;
     margin-top: 30px;
     line-height: 1; }
   .s_stats .text {
-    font-family: "Exo2EL";
+    font-family: "ProximaNovaLight", sans-serif;
     font-size: 14px;
     letter-spacing: 0;
     color: #f5f5f5;
@@ -540,7 +540,7 @@ section {
         display: inline-block; }
       .s_ribbon .slider_wrap .slide .autor {
         display: inline-block;
-        font-family: "OpenSans";
+        font-family: "OpenSans", sans-serif;
         font-size: 14px;
         font-weight: 100;
         line-height: 22px;
@@ -600,12 +600,12 @@ section {
       cursor: pointer; }
     .s_team .team_wrap .role {
       margin-top: 15px;
-      font-family: "Exo2Black";
+      font-family: "ProximaNovaBlack", sans-serif;
       font-size: 15px;
       letter-spacing: 0.015em;
       color: #cd2929; }
     .s_team .team_wrap .name {
-      font-family: "Exo2Black";
+      font-family: "ProximaNovaBlack", sans-serif;
       font-size: 24px;
       text-transform: uppercase;
       letter-spacing: 0.01em;
@@ -613,7 +613,7 @@ section {
     .s_team .team_wrap .separator {
       margin: 15px 0; }
     .s_team .team_wrap .sub_title {
-      font-family: "OpenSans";
+      font-family: "OpenSans", sans-serif;
       font-size: 14px;
       line-height: 20px;
       letter-spacing: 0.06em; }
@@ -646,7 +646,7 @@ section {
       margin-top: 20px; }
       .s_callback .form_wrap .contact_info .address,
       .s_callback .form_wrap .contact_info .email {
-        font-family: "OpenSans";
+        font-family: "OpenSans", sans-serif;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.075em;
@@ -663,7 +663,7 @@ section {
       background-color: transparent;
       border: none;
       border-bottom: 1px solid #434343;
-      font-family: "Exo2EL";
+      font-family: "ProximaNovaLight", sans-serif;
       letter-spacing: 0.025em;
       font-size: 14px;
       padding: 0 100px; }
@@ -688,7 +688,7 @@ section {
       color: #f5f5f5;
       background-color: transparent;
       border: none;
-      font-family: "Exo2EL";
+      font-family: "ProximaNovaLight", sans-serif;
       letter-spacing: 0.025em;
       font-size: 14px;
       padding: 50px 100px;
@@ -707,7 +707,7 @@ section {
       transform: rotate(45deg);
       border: 1px solid #cd2929;
       box-sizing: border-box;
-      font-family: "Exo2Black"; }
+      font-family: "ProximaNovaBlack", sans-serif; }
       .s_callback .callback_form .btn .overlay:hover {
         background-color: #cd2929; }
     .s_callback .callback_form .btn .text {
@@ -730,7 +730,7 @@ section {
     .main_footer .logo_wrap img {
       margin: 0 5px; }
   .main_footer p {
-    font-family: "OpenSans";
+    font-family: "OpenSans", sans-serif;
     font-weight: 100;
     color: #a3a3a3;
     font-size: 11px;

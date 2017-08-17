@@ -141,6 +141,18 @@ $(function() {
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
 	
+	//Animation
+	$(".anim_fi").animated("fadeIn", "fadeOut");
+	$(".anim_fiu").animated("fadeInUp", "fadeOutDown");
+	$(".anim_fid").animated("fadeInDown", "fadeOutUp");
+	$(".anim_fil").animated("fadeInLeft", "fadeOutDown");
+	$(".anim_fir").animated("fadeInRight", "fadeOutDown");
+	//flip
+	$(".anim_fix").animated("flipInX", "fadeOut");
+	//slide
+	$(".anim_sid").animated("slideInDown", "fadeOut");
+	//shake
+	$(".anim_sha").animated("shake", "fadeOut");
 });
 
 $(window).load(function() {

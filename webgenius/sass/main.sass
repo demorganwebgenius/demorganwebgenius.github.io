@@ -5,6 +5,13 @@ $light: #f5f5f5
 $white: #fff
 $dark: #212121
 
+$opensans: "OpenSans"
+$exoblack: "Exo2Black"
+$exoel: "Exo2EL"
+$proxima: "ProximaNova"
+$proxima_light: "ProximaNovaLight"
+$proxima_black: "ProximaNovaBlack"
+
 *
 	margin: 0
 	padding: 0
@@ -44,7 +51,7 @@ html.js .loader
 		position: absolute
 
 body
-	font-family: "OpenSans", sans-serif
+	font-family: $opensans, sans-serif
 	font-weight: normal
 	font-size: 14px
 	min-width: 320px
@@ -69,7 +76,7 @@ body textarea:required:valid
 	background-color: $light
 
 h1
-	font-family: "Exo2Black"
+	font-family: $proxima_black, sans-serif
 	font-size: 23px
 	text-transform: uppercase
 	display: inline-block
@@ -131,7 +138,7 @@ img.scroll
 			li
 				display: inline-block
 				line-height: 30px
-				font-family: "Exo2Black"
+				font-family: $proxima_black, sans-serif
 				font-size: 15px
 				text-transform: uppercase
 				box-sizing: border-box
@@ -196,20 +203,20 @@ img.scroll
 							margin: 0 10px
 						h1.main_slide_name
 							color: $light
-							font-family: "Exo2Black"
+							font-family: $proxima_black, sans-serif
 							font-size: 60px
 							text-transform: uppercase
 							letter-spacing: 0.06em
 					.main_slide_descr
 						color: $light
-						font-family: "Exo2EL"
+						font-family: $proxima_light, sans-serif
 						font-size: 25px
 						text-transform: uppercase
 						margin: 50px 0 0
 						letter-spacing: 0.02em
 					.main_slide_phone
 						color: $light
-						font-family: "Exo2EL"
+						font-family: $proxima_light, sans-serif
 						font-size: 20px
 						text-transform: uppercase
 						margin: 40px 0 0
@@ -272,18 +279,18 @@ section
 	padding-bottom: 170px
 	text-align: center
 	h2
-		font-family: "Exo2Black"
+		font-family: $proxima_black, sans-serif
 		font-size: 48px
 		letter-spacing: 0.03em
 		text-transform: uppercase
 	h3
-		font-family: "Exo2Black"
+		font-family: $proxima_black, sans-serif
 		font-size: 24px
 		letter-spacing: 0.01em
 		text-transform: uppercase
 		font-weight: normal
 	p
-		font-family: "OpenSans"
+		font-family: $opensans, sans-serif
 		font-size: 14px
 		letter-spacing: 0.06em
 		line-height: 22px
@@ -369,7 +376,7 @@ section
 		.overlay
 			display: none
 			h4
-				font-family: "Exo2Black"
+				font-family: $proxima_black, sans-serif
 				font-size: 24px
 				line-height: 22px
 				letter-spacing: 0.05em
@@ -480,7 +487,7 @@ section
 				display: inline-block
 			.autor
 				display: inline-block
-				font-family: "OpenSans"
+				font-family: $opensans, sans-serif
 				font-size: 14px
 				font-weight: 100
 				font-style: italic
@@ -499,14 +506,14 @@ section
 	.icon
 		margin-top: 75px
 	.number
-		font-family: "Exo2Black"
+		font-family: $proxima_black, sans-serif
 		font-size: 55px
 		letter-spacing: 0
 		color: $special
 		margin-top: 30px
 		line-height: 1
 	.text
-		font-family: "Exo2EL"
+		font-family: $proxima_light, sans-serif
 		font-size: 14px
 		letter-spacing: 0
 		color: $light
@@ -565,7 +572,7 @@ section
 				display: inline-block
 			.autor
 				display: inline-block
-				font-family: "OpenSans"
+				font-family: $opensans, sans-serif
 				font-size: 14px
 				font-weight: 100
 				line-height: 22px
@@ -624,12 +631,12 @@ section
 			cursor: pointer
 		.role
 			margin-top: 15px
-			font-family: "Exo2Black"
+			font-family: $proxima_black, sans-serif
 			font-size: 15px
 			letter-spacing: 0.015em
 			color: $special
 		.name
-			font-family: "Exo2Black"
+			font-family: $proxima_black, sans-serif
 			font-size: 24px
 			text-transform: uppercase
 			letter-spacing: 0.01em
@@ -637,7 +644,7 @@ section
 		.separator
 			margin: 15px 0
 		.sub_title
-			font-family: "OpenSans"
+			font-family: $opensans, sans-serif
 			font-size: 14px
 			line-height: 20px
 			letter-spacing: 0.06em
@@ -670,7 +677,7 @@ section
 			margin-top: 20px
 			.address,
 			.email
-				font-family: "OpenSans"
+				font-family: $opensans, sans-serif
 				font-size: 14px
 				line-height: 18px
 				letter-spacing: 0.075em
@@ -687,7 +694,7 @@ section
 			background-color: transparent
 			border: none
 			border-bottom: 1px solid #434343
-			font-family: "Exo2EL"
+			font-family: $proxima_light, sans-serif
 			letter-spacing: 0.025em
 			font-size: 14px
 			padding: 0 100px
@@ -717,7 +724,7 @@ section
 				color: $light
 				background-color: transparent
 				border: none
-				font-family: "Exo2EL"
+				font-family: $proxima_light, sans-serif
 				letter-spacing: 0.025em
 				font-size: 14px
 				padding: 50px 100px
@@ -737,7 +744,7 @@ section
 				transform: rotate(45deg)
 				border: 1px solid $special
 				box-sizing: border-box
-				font-family: "Exo2Black"
+				font-family: $proxima_black, sans-serif
 				&:hover
 					background-color: $special
 			.text
@@ -760,7 +767,7 @@ section
 		img
 			margin: 0 5px
 	p
-		font-family: "OpenSans"
+		font-family: $opensans, sans-serif
 		font-weight: 100
 		color: #a3a3a3
 		font-size: 11px
@@ -778,3 +785,5 @@ section
 		&:hover
 			background-image: url("../img/about/icon/hover_bg.png")
 			color: #1ab4ef
+
+			
