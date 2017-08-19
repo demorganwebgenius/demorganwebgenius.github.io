@@ -52,7 +52,7 @@ $(function() {
 					0 : {
 						items : 1,
 						autoplay: true,
-						autoplayTimeout: 5000,
+						autoplayTimeout: 8000,
 						loop: true,
 						dots: true,
 						dotsData: true
