@@ -93,8 +93,8 @@ h1
 	h1
 		display: table-cell
 		vertical-align: middle
-img.scroll
-	width: 5%
+
+.scroll
 	margin: auto
 	position: absolute
 	top: 0
@@ -102,6 +102,22 @@ img.scroll
 	bottom: -100%
 	right: 0
 	z-index: 1
+	display: block
+	height: 76px
+	width: 76px
+	background-color: rgba(205,41,41,.8)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: 25px 25px
+	transform: rotate(45deg)
+	border: 1px solid $special
+	border-radius: 0
+	&:hover
+		background-color: $special
+	&.scroll_down
+		background-image: url("../img/scroll_down.png")
+	&.scroll_jump
+		background-image: url("../img/scroll_jump.png")
 
 //-----Comment Slider-----//
 .comment_slider
@@ -138,12 +154,13 @@ img.scroll
 		ul
 			list-style-type: none
 			cursor: pointer
-			float: right
+			text-align: right
 			li
 				display: inline-block
-				line-height: 30px
+				line-height: 33px
 				font-family: $proxima_black, sans-serif
 				font-size: 15px
+				color: $dark
 				text-transform: uppercase
 				box-sizing: border-box
 				border: 1px solid transparent
@@ -151,136 +168,163 @@ img.scroll
 				&:hover
 					border: 1px solid #000
 					background-color: rgba(33,33,33,.1)
+				&.mnu_btn
+					display: none
+					margin-top: -73px
+					background: none
+					border: 1px solid transparent
+					padding: 13px 0
+					img
+						display: block
+						margin: auto
 				a
 					display: inline-block
 					height: 100%
 					padding: 20px 14px
 					outline: none
-
+					color: inherit
 	.main_slider
 		position: relative
 		padding-top: 0
 		padding-bottom: 0
-		img.scroll
-			width: 5%
-			margin: auto
-			position: absolute
-			top: 0
-			left: 0
-			bottom: -100%
-			right: 0
-			z-index: 1
+		margin-top: 74px
 		.slider_wrap
 			position: relative
 			z-index: 0
-			img
-				//width: 100%
-			.owl-theme
-				.owl-nav
-					.owl-prev,
-					.owl-next
-						height: 107px
-						position: absolute
-						top: 50%
-						margin: auto
-						margin-top: -70px
-						padding: 0
-						display: block
-						background: none
-					.owl-prev
-						left: 0
-					.owl-next
-						right: 0
-					
+			.owl-slide
+				background-repeat: no-repeat
+				background-size: cover
+				background-position: center
+				height: 1070px
+				&.slide-1
+					background-image: url("../img/promo_banner_1_img.jpg")
+				&.slide-2
+					background-image: url("../img/promo_banner_2_img.jpg")
+				&.slide-3
+					background-image: url("../img/promo_banner_3_img.jpg")
 			.slider_descr
-				.main_slide
-					position: absolute
-					top: 0
-					left: 0
-					right: 0
-					bottom: 0
-					margin: auto
-					.logo_wrap
-						margin: 250px auto 0
-						.main_slide_img
-							width: 150px
-							height: 146px
-							margin: 0 10px
-						h1.main_slide_name
-							color: $light
-							font-family: $proxima_black, sans-serif
-							font-size: 60px
-							text-transform: uppercase
-							letter-spacing: 0.06em
-							text-shadow: rgba(33,33,33,.6) 0px 0px 4px
-					.main_slide_descr,
-					.main_slide_slogan
+				position: absolute
+				top: 0
+				left: 0
+				right: 0
+				bottom: 0
+				margin: auto
+				.logo_wrap
+					margin: 200px auto 0
+					.logo_img
+						width: 150px
+						height: 146px
+						margin: 0 10px
+					.logo_name
 						color: $light
-						font-family: $proxima, sans-serif
-						font-size: 30px
+						font-family: $proxima_black, sans-serif
+						font-size: 60px
 						text-transform: uppercase
-						margin: 50px 0 0
-						letter-spacing: 0.01em
-						text-shadow: rgba(33, 33, 33, .8) 0px 0px 3px
-						span
-							font-weight: 600
-							color: $special
-					.separator
-						margin: 30px auto 0
-						height: 11px
-						width: 47px
-					.main_slide_btn
-						a
-							transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360)
-							display: block
-							margin: 140px auto
-							max-width: 400px
-							text-decoration: none
-							padding: 20px 30px
-						a.button
-							font-family: $proxima, sans-serif
-							color: $light
-							font-size: 20px
-							font-weight: 600
-							text-transform: uppercase
-							box-shadow: rgba(205, 41, 41, 0.4) 0 0px 0px 2px inset
-							text-shadow: rgba(33, 33, 33, .8) 0px 0px 3px
-						a.button:hover 
-							box-shadow: $special 0 0px 0px 40px inset
-				img 
-					&.rubik
-						width: 40%
-						margin: auto
-						position: absolute
-						top: 0
-						left: 0
-						bottom: 0
-						right: 0
+						letter-spacing: 0.06em
+						text-shadow: rgba(33,33,33,.6) 0px 0px 4px
+				.slide_slogan
+					color: $light
+					font-family: $proxima, sans-serif
+					font-size: 30px
+					text-transform: uppercase
+					margin: 50px 0 0
+					letter-spacing: 0.01em
+					text-shadow: rgba(33, 33, 33, .8) 0px 0px 3px
+					span
+						font-weight: 600
+						color: $special
 				.text 
-					width: 25%
+					display: table
+					width: 30%
+					height: 40%
 					margin: auto
 					position: absolute
-					top: 35%
+					top: 25%
 					left: 0
 					bottom: 0
 					right: 0
 					color: $white
 					z-index: 1
-
-					.separator
-						height: 11px
-						width: 47px
-						margin: 40px auto
-					p
+					.text_content
+						display: table-cell
+						vertical-align: middle
+					.slide_name
+						color: $light
+						font-family: $proxima_black, sans-serif
+						font-size: 47px
+						text-transform: uppercase
+						letter-spacing: 0.06em
+					.slide_text
 						font-family: $proxima, sans-serif
-						font-size: 25px
+						font-size: 22px
 						margin-bottom: 20px
 						letter-spacing: 0.01em
-						line-height: 25px
-						span
-							font-weight: 600
-							color: $light
-				
+						line-height: 22px
+				.separator
+					margin: 30px auto
+					height: 11px
+					width: 47px
+				.slide_btn
+					.button
+						transition: all 200ms cubic-bezier(0.390, 0.500, 0.150, 1.360)
+						display: block
+						margin: 140px auto
+						max-width: 400px
+						text-decoration: none
+						padding: 20px 30px
+						font-family: $proxima, sans-serif
+						color: $light
+						font-size: 20px
+						font-weight: 600
+						text-transform: uppercase
+						box-shadow: rgba(205, 41, 41, 0.4) 0 0px 0px 2px inset
+						text-shadow: rgba(33, 33, 33, .8) 0px 0px 3px
+						&:hover 
+							box-shadow: $special 0 0px 0px 40px inset
+				.rubik
+					width: 40%
+					margin: auto
+					position: absolute
+					top: 0
+					left: 0
+					bottom: 0
+					right: 0
+
+			.owl-theme
+				.owl-nav
+					.owl-prev,
+					.owl-next
+						position: absolute
+						top: 50%
+						margin-top: -53px
+						padding: 0
+						display: block
+						height: 76px
+						width: 76px
+						background-color: rgba(205,41,41,.3)
+						background-position: center
+						background-repeat: no-repeat
+						background-size: 25px 25px
+						transform: rotate(45deg)
+						border: 1px solid $special
+						border-radius: 0
+						&:hover
+							background-color: $special
+					.owl-prev
+						background-image: url("../img/left_arrow2.png")
+						left: -30px
+					.owl-next
+						background-image: url("../img/right_arrow2.png")
+						
+						right: -30px
+						// &:before
+						// 	border: 1px solid silver
+						// 	content: ""
+						// 	border-top: 50px solid silver
+						// 	width: 50px
+						// 	border-bottom: 50px solid silver
+					
+
 //-----Sections-----//
 section
 	padding-top: 170px
@@ -306,9 +350,10 @@ section
 		font-size: 20px
 	.separator
 		margin: 30px auto
+	&.s_long
+		padding-top: 200px
 .s_features
 	min-height: 800px 
-	padding-top: 200px
 	.icon_wrap
 		.icon
 			margin-top: 100px
@@ -322,13 +367,15 @@ section
 	background-size: cover
 	color: $light
 	position: relative
+	p
+		font-size: 16px
+		line-height: 24px
 	.logo_wrap
 		margin: 40px auto 0
 		.logo
 			margin: 0 5px
 		h1
 			line-height: 31px
-			color: #bcbcbc
 	.icon
 		display: inline-block
 		width: 75px
@@ -342,18 +389,8 @@ section
 		&:hover
 			background-image: url("../img/about/icon/hover_bg.png")
 			color: #1ab4ef
-	.scroll
-		width: 5%
-		margin: auto
-		position: absolute
-		top: 0
-		left: 0
-		bottom: -100%
-		right: 0
-		z-index: 1
 
-.s_portfolio,
-.s_news
+.s_portfolio
 	.grid_wrap
 		position: relative
 		margin: 0 -15px
@@ -405,7 +442,6 @@ section
 			right: 0
 .s_portfolio
 	min-height: 600px
-	padding-top: 200px
 	.grid_wrap
 		min-height: 1200px
 		.top_block
@@ -499,6 +535,7 @@ section
 			.autor
 				display: inline-block
 				font-family: $opensans, sans-serif
+				padding: 0
 				font-size: 14px
 				font-weight: 100
 				font-style: italic
@@ -506,7 +543,7 @@ section
 				margin-top: 30px
 					
 .s_rates
-	padding-top: 200px
+	
 
 .s_stats
 	min-height: 500px
@@ -601,48 +638,62 @@ section
 // 					letter-spacing: 0.075em
 // 					color: #7c7c7c
 .s_team
-	padding-top: 200px
 	.team_wrap
-		position: relative
-		margin-top: 75px
 		.overlay
+			position: relative
 			display: none
 			width: 269px
 			height: 269px
-			margin: -269px -7px 0
+			margin: -271px auto 0
 			.holder
 				position: absolute
 				display: block
-				width: 75px
-				height: 75px
-				background-image: url("../img/team/overlay/bg_icon.png")
+				width: 50px
+				height: 50px
+				margin: auto
+				top: 0
+				left: 0
+				bottom: 0
+				right: 0
+				z-index: 1
+				background-color: rgba(32,32,32,.2)
+				transform: rotate(45deg)
+				border: 1px solid $dark
+				border-radius: 0
 				&:hover
-					background-image: url("../img/team/overlay/bg_icon_hover.png")
+					background-color: $special
 				i	
 					font-size: 25px
-					margin-top: 34%
+					margin-top: 25%
 					color: $light
+					transform: rotate(-45deg)
 			.icon_left
-				top: 0
-				bottom: 85px
-				left: 0
-				right: 80px
+				top: 121px
+				bottom: 0px
+				left: 0px
+				right: 75px
 				margin: auto
 			.icon_right
-				top: 0
-				bottom: 85px
-				left: 80px
-				right: 0
+				top: 121px
+				bottom: 0px
+				left: 76px
+				right: 0px
 				margin: auto
 			.icon_bottom
-				top: 194px
-				bottom: 100%
-				left: 0
-				right: 0
-				margin: 0 auto
+				top: 196px
+				bottom: 0px
+				left: 1px
+				right: 0px
+				margin: auto
 		.photo
-			margin: 0 -7px
+			margin: 75px auto 0
 			cursor: pointer
+			width: 269px
+			height: 269px
+			img
+				width: 269px
+				height: 269px
+				margin: 0 auto
 		.role
 			margin-top: 15px
 			font-family: $proxima_black, sans-serif
@@ -663,8 +714,8 @@ section
 			line-height: 20px
 			letter-spacing: 0.06em
 
-.s_clients
-	background-image: url("../img/clients/bg_clients.jpg")
+.s_inspire
+	background-image: url("../img/inspire/bg_inspire.jpg")
 	color: $light
 	position: relative
 	background-size: cover
@@ -687,19 +738,22 @@ section
 				font-style: italic
 				letter-spacing: 0.1em
 				margin-top: 30px
-	.s_clients_logo
-		margin-top: 90px	
+				padding: 0
+	// .s_clients_logo
+	// 	margin-top: 90px	
 
 .s_callback
-	padding-top: 200px
 	position: relative
 	.form_wrap
 		background-image: url("../img/callback/bg_callback.png")
-		width: 1169px
+		background-position: center
+		background-repeat: no-repeat
+		// background-size: cover
+		// width: 1169px
 		height: 1169px
 		margin: 50px auto 0
 		.contact_info
-			margin-top: 20px
+			margin-top: 30px
 			.address,
 			.email
 				font-family: $opensans, sans-serif
@@ -710,7 +764,7 @@ section
 			.email
 				margin-top: 30px
 	.callback_form
-		position: relative
+		// position: relative
 		input
 			outline: none
 			height: 120px
@@ -745,7 +799,7 @@ section
 		.message
 			textarea
 				outline: none
-				height: 350px
+				height: 250px
 				color: $light
 				background-color: transparent
 				border: none
@@ -759,27 +813,41 @@ section
 				&:focus
 					text-align: left
 		.btn
-			.overlay
-				background-color: rgba(205,41,41,.6)
-				width: 190px
-				height: 190px
+			position: relative
+			background-color: rgba(205,41,41,.6)
+			width: 675px
+			margin: 0 auto
+			height: 100px
+			line-height: 100px
+			box-sizing: border-box
+			font-family: $proxima_black, sans-serif
+			text-transform: uppercase
+			font-size: 24px
+			color: $light
+			cursor: pointer
+			&:before
+				content: ""
 				position: absolute
-				right: 39px
-				top: 489px
-				transform: rotate(45deg)
-				border: 1px solid $special
-				box-sizing: border-box
-				font-family: $proxima_black, sans-serif
-				&:hover
-					background-color: $special
-			.text
-				text-transform: uppercase
-				font-size: 24px
-				color: $light
-				transform: rotate(-45deg)
+				left: -100px
+				border-top: 50px solid rgba(205,41,41,.6)
+				border-right: 50px solid rgba(205,41,41,.6)
+				border-left: 50px solid transparent
+				border-bottom: 50px solid transparent
+			&:after
+				content: ""
 				position: absolute
-				top: 84px
-				right: 20px
+				right: -100px
+				border-color: rgba(205,41,41,.6) transparent rgba(205,41,41,.6) transparent
+				border-top: 50px solid rgba(205,41,41,.6)
+				border-right: 50px solid transparent
+				border-left: 50px solid rgba(205,41,41,.6)
+				border-bottom: 50px solid transparent
+			&:hover
+				background-color: $special
+			&:hover:after
+				border-color: $special transparent transparent $special 
+			&:hover:before
+				border-color: $special $special transparent transparent
 
 .main_footer
 	background-color: $dark

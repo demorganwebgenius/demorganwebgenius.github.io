@@ -5,34 +5,17 @@ $(function() {
 		responsive : {
 					0 : {
 						items : 1,
+						// autoWidth: true,
 						//autoplay: true,
 						//autoplayTimeout: 5000,
 						nav: true,
-						navText: ["<img src='img/left_arrow.png'>","<img src='img/right_arrow.png'>"],
+						navText: [""],
 						loop: true,
 						dots: false
 					}
 				}
 	});
-	$(".slider_wrap .owl-theme .owl-nav .owl-next").hover(function() {
-		var bgi = 'img/right_arrow_hover.png';
-		$(this).css('background-image', 'url(' + bgi +')');
-	},function() {
-		$(this).css('background-image', 'none');
-	});
-	$(".slider_wrap .owl-theme .owl-nav .owl-prev").hover(function() {
-		var bgi = 'img/left_arrow_hover.png';
-		$(this).css('background-image', 'url(' + bgi +')');
-	},function() {
-		$(this).css('background-image', 'none');
-	});
-	$(".slider_wrap .owl-theme .plus").hover(function() {
-		var bgi = 'img/plus_button_hover.png';
-		$(this).attr('src', bgi);
-	},function() {
-		var bgi = 'img/plus_button.png';
-		$(this).attr('src', bgi);
-	});
+
 	//Portfolio Overlay
 	$(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseover(function() {
 		$(this).siblings('.overlay').show();
@@ -51,7 +34,7 @@ $(function() {
 		responsive : {
 					0 : {
 						items : 1,
-						autoplay: true,
+						//autoplay: true,
 						autoplayTimeout: 8000,
 						loop: true,
 						dots: true,
@@ -60,20 +43,20 @@ $(function() {
 				}
 	});
 	//Ribbon Slider
-		$(".s_ribbon .slider_wrap .owl-carousel").owlCarousel({
-			responsive : {
-						0 : {
-							items : 1,
-							autoplay: true,
-							autoplayTimeout: 5000,
-							loop: true,
-							dots: true,
-							dotsData: true
-						}
-					}
-		});
-	//Clients Slider
-		$(".s_clients .slider_wrap .owl-carousel").owlCarousel({
+		// $(".s_ribbon .slider_wrap .owl-carousel").owlCarousel({
+		// 	responsive : {
+		// 				0 : {
+		// 					items : 1,
+		// 					autoplay: true,
+		// 					autoplayTimeout: 5000,
+		// 					loop: true,
+		// 					dots: true,
+		// 					dotsData: true
+		// 				}
+		// 			}
+		// });
+	//Inspire Slider
+		$(".s_inspire .slider_wrap .owl-carousel").owlCarousel({
 			responsive : {
 						0 : {
 							items : 1,
@@ -86,31 +69,39 @@ $(function() {
 					}
 		});
 	//Clients logos hover
-	$(".s_clients .s_clients_logo").hover(function() {
-		var src = $(this).attr("src");
-		src = src.substr(0,24) + "_hover.png";
-		$(this).attr("src", src);
-	}, function() {
-		var src = $(this).attr("src");
-		src = src.substr(0,24) + ".png";
-		$(this).attr("src", src);
-	});
+	// $(".s_clients .s_clients_logo").hover(function() {
+	// 	var src = $(this).attr("src");
+	// 	src = src.substr(0,24) + "_hover.png";
+	// 	$(this).attr("src", src);
+	// }, function() {
+	// 	var src = $(this).attr("src");
+	// 	src = src.substr(0,24) + ".png";
+	// 	$(this).attr("src", src);
+	// });
 	//Team Social Hover
 	$(".s_team .photo").mouseover(function() {
 		$(this).children('.overlay').show();
+		var src = $(this).children("img").attr("src");
+		src = src.substr(0,17) + "_hover.png";
+		$(this).children("img").attr("src", src);
 	});
 	$('.s_team .photo').mouseout(function() {
 		$(this).children('.overlay').hide();
+		var src = $(this).children("img").attr("src");
+		src = src.substr(0,17) + ".png";
+		$(this).children("img").attr("src", src);
 	});
+	//Scroll2id
+	$(".top_navbar .navbar_wrap ul a").mPageScroll2id();
+	$("section  .scroll2id").mPageScroll2id();
+	$(".main_slider .slide_btn .button").mPageScroll2id();
 	//SVG Fallback
 	if(!Modernizr.svg) {
 		$("img[src*='svg']").attr("src", function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-	//Scroll2id
-	$(".top_navbar .navbar_wrap ul a").mPageScroll2id();
-	$("section  .scroll2id").mPageScroll2id();
+
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
 	$("form").submit(function() { //Change
