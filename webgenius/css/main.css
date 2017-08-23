@@ -473,6 +473,7 @@ section {
           background-image: url("../img/portfolio/overlay_btn_hover.png"); }
     .s_portfolio .grid_wrap .overlay {
       z-index: 1;
+      display: none;
       transform: rotate(-45deg) scale(0.8); }
       .s_portfolio .grid_wrap .overlay h4 {
         font-family: "ProximaNovaBlack", sans-serif;

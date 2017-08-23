@@ -466,16 +466,16 @@
 		font-size: 20px;
 	}
 /* ----------Rates---------- */
-	.s_rates	.rate_wrap {
-		margin: 50px 40px 0;
+	.s_rates	.rate_wrap ul li:hover {
+		font-size: 14px;
 	}
-	.s_rates	.rate_wrap ul li {
-		text-transform: uppercase;
-	}	
-	.s_rates	.rate_wrap ul li:before {
-		width: 50px;
+	.s_rates	.rate_wrap .name_wrap h3 {
+		font-size: 18px;
 	}
-/* ---------- Portfolio Blocks ---------- */
+	.s_rates	.rate_wrap .price_wrap .price {
+		font-size: 24px;
+	}
+/* ---------- Portfolio ---------- */
 .s_portfolio .grid_wrap {
 		min-height: 1100px;
 		width: 481px;
@@ -669,7 +669,7 @@
 	.s_callback .callback_form .message	textarea {
 		padding: 30px;
 	}
-/* ---------- Portfolio Blocks ---------- */
+/* ---------- Portfolio ---------- */
 	.s_portfolio .grid_wrap {
 			min-height: 1100px;
 			width: 100%;
@@ -695,7 +695,7 @@
 		margin-top: 80px;
 		font-size: 24px;
 	}
-	/* ---------- Portfolio Blocks ---------- */
+/* ---------- Portfolio Blocks ---------- */
 	.s_portfolio .grid_wrap	.top_block .block_1,
 	.s_portfolio .grid_wrap	.top_block .block_2,
 	.s_portfolio .grid_wrap	.top_block .block_3,
@@ -753,15 +753,57 @@
 	    width: 100%;
 	}
 }
-/* ----------- 480 special for rates ---------- */
-@media only screen and (max-width : 480px) {
+/* ----------- 768 special for rates ---------- */
+@media only screen and (max-width : 768px) {
+	.s_rates	.rate_wrap {
+			margin: 50px 90px 0;
+		}
+	.s_rates	.rate_wrap ul li {
+		padding-left: 110px;
+		text-transform: uppercase;
+		letter-spacing: 0.0em;
+	}	
+	.s_rates	.rate_wrap ul li:before {
+		width: 90px;
+	}
+}
+/* ----------- 585 special for rates ---------- */
+@media only screen and (max-width : 585px) {
+	.s_rates	.rate_wrap {
+			margin: 50px 50px 0;
+		}
 	.s_rates	.rate_wrap ul li {
 		padding-left: 85px;
-		text-transform: none;
-		letter-spacing: 0.1em;
+		text-transform: uppercase;
+		letter-spacing: 0.0em;
 	}	
 	.s_rates	.rate_wrap ul li:before {
 		width: 70px;
+	}
+}
+/* ----------- 480 special for rates ---------- */
+@media only screen and (max-width : 480px) {
+	.s_rates	.rate_wrap {
+			margin: 50px 30px 0;
+		}
+	.s_rates	.rate_wrap ul li:before {
+		width: 60px;
+	}
+	.s_rates	.rate_wrap ul li {
+		padding-left: 70px;
+		font-size: 14px;
+		text-transform: none;
+		letter-spacing: 0.0em;
+	}	
+	.s_rates	.rate_wrap ul li:hover {
+		font-size: 14px;
+	}
+	.s_rates	.rate_wrap .name_wrap h3 {
+		font-size: 18px;
+	}
+	.s_rates	.rate_wrap .price_wrap .price {
+		font-size: 24px;
+	}
 }
 /* ---------- 400 special for rates ---------- */
 @media only screen and (max-width : 400px) {
@@ -775,7 +817,7 @@
 		line-height: 60px;
 	}
 	.s_rates	.rate_wrap .name_wrap h3 {
-		font-size: 18px;
+		font-size: 16px;
 	}
 	.s_rates	.rate_wrap .price_wrap .price {
 		font-size: 24px;
@@ -799,3 +841,4 @@
 		line-height: 60px;
 	}
 }
+
