@@ -17,18 +17,19 @@ $(function() {
 	});
 
 	//Portfolio Overlay
-	$(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseover(function() {
-		$(this).siblings('.overlay').show();
-		var src = $(this).siblings('.item').attr("src");
-		src = src.substr(0,26) + "_hover.png";
-		$(this).siblings('.item').attr("src", src);
-	});
-	$(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseout(function() {
-		$(this).siblings('.overlay').hide();
-		var src = $(this).siblings('.item').attr("src");
-		src = src.substr(0,26) + ".png";
-		$(this).siblings('.item').attr("src", src);
-	});
+	// $(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseover(function() {
+	// 	$(this).siblings('.overlay').show();
+	// 	// var src = $(this).siblings('.item').attr("src");
+	// 	// src = src.substr(0,26) + "_hover.png";
+	// 	// $(this).siblings('.item').attr("src", src);
+	// });
+	// $(".s_portfolio .grid_wrap .overlay_rot, .s_news .grid_wrap .overlay_rot").mouseout(function() {
+	// 	$(this).siblings('.overlay').hide();
+	// 	// var src = $(this).siblings('.item').attr("src");
+	// 	// src = src.substr(0,26) + ".png";
+	// 	// $(this).siblings('.item').attr("src", src);
+	// });
+
 	//Testimonials Slider
 	$(".s_testimonials .slider_wrap .owl-carousel").owlCarousel({
 		responsive : {

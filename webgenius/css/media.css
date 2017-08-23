@@ -88,7 +88,7 @@
 		width: 34px;
 		margin: 20px auto
 	}
-	/* ----------SECTION ALL---------- */
+/* ----------SECTION ALL---------- */
 	section {
 		padding-top: 120px;
 		padding-bottom: 120px;
@@ -104,11 +104,11 @@
 		line-height: 30px;
 		padding: 0px 20px;
 	}
-	/* ----------Features---------- */
+/* ----------Features---------- */
 	.s_features	.icon_wrap .icon {
 		margin-top: 50px;
 	}
-	/* ----------Rates---------- */
+/* ----------Rates---------- */
 	.s_rates	.rate_wrap {
 		margin: 80px 20px 0;
 	}
@@ -124,14 +124,83 @@
 	.s_rates	.rate_wrap ul li:before {
 		width: 70px;
 	}
-
-
+/* ----------Portfolio---------- */
+.s_portfolio .grid_wrap .block {
+		width: 300px;
+		height: 300px;
+	}
+.s_portfolio .grid_wrap .overlay_rot {
+		width: 213px;
+		height: 213px;
+	}
+.s_portfolio .grid_wrap .overlay_rot .holder {
+		top: 149px;
+		left: 149px;
+		width: 75px;
+		height: 75px;
+	}
+.s_portfolio .grid_wrap .overlay h4 {
+	margin-top: 80px;
+}
+/* ---------- Portfolio Blocks ---------- */
+.s_portfolio .grid_wrap	.top_block .block_1 {
+		top: 0;
+		left: 5px;
+	}
+.s_portfolio .grid_wrap	.top_block .block_2 {
+		top: 0;
+		left: 325px;
+	}
+.s_portfolio .grid_wrap	.top_block .block_3 {
+		top: 0;
+		left: 645px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_4 {
+		top: 160px;
+		left: 165px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_5 {
+		top: 320px;
+		left: 5px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_6 {
+		top: 480px;
+		left: 165px;
+	}
+.s_portfolio .grid_wrap	.middle_block .block_7 {
+		top: 320px;
+		left: 325px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_8 {
+		top: 160px;
+		left: 485px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_9 {
+		top: 320px;
+		left: 645px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_10 {
+		top: 480px;
+		left: 485px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_11 {
+		top: 640px;
+		left: 5px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_12 {
+		top: 640px;
+		left: 325px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_13 {
+		top: 640px;
+		left: 645px;
+	}
 }
 
 /* Medium Devices, Desktops */
 /* SM-SMALL (769-992)*/
 @media only screen and (max-width : 992px) {
-	/* ----------Main Slider---------- */
+/* ----------Main Slider---------- */
 	.main_header .main_slider .slider_wrap .owl-slide{
 		height: 700px;
 	}
@@ -177,7 +246,7 @@
 	.main_header .main_slider .slider_wrap .slider_descr .text .slide_name {
 		font-size: 32px;
 	}
-	/* ----------SECTION ALL---------- */
+/* ----------SECTION ALL---------- */
 	section {
 		padding-top: 100px;
 		padding-bottom: 100px;
@@ -201,7 +270,7 @@
 	section .separator {
 		margin: 25px auto;
 	}
-	/* ----------Features---------- */
+/* ----------Features---------- */
 	.s_features	.icon_wrap .icon {
 		margin-top: 40px;
 	}
@@ -211,7 +280,7 @@
 	.s_features	.icon_wrap p {
 		margin-top: 10px;
 	}
-	/* ----------Rates---------- */
+/* ----------Rates---------- */
 	.s_rates	.rate_wrap {
 		margin: 80px 10px 0;
 	}
@@ -230,12 +299,72 @@
 	.s_rates	.rate_wrap ul li:before {
 		width: 50px;
 	}
+	.s_rates .note {
+		font-size: 14px;;
+	}
+/* ----------Portfolio---------- */
+.s_portfolio .grid_wrap {
+		min-height: 1650px;
+	}
+/* ---------- Portfolio Blocks ---------- */
+.s_portfolio .grid_wrap	.top_block .block_1 {
+		top: 0;
+		left: 225px;
+	}
+.s_portfolio .grid_wrap	.top_block .block_2 {
+		top: 160px;
+		left: 65px;
+	}
+.s_portfolio .grid_wrap	.top_block .block_3 {
+		top: 160px;
+		left: 385px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_4 {
+		top: 320px;
+		left: 225px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_5 {
+		top: 480px;
+		left: 65px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_6 {
+		top: 480px;
+		left: 385px;
+	}
+.s_portfolio .grid_wrap	.middle_block .block_7 {
+		top: 640px;
+		left: 225px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_8 {
+		top: 800px;
+		left: 65px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_9 {
+		top: 800px;
+		left: 385px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_10 {
+		top: 960px;
+		left: 225px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_11 {
+		top: 1120px;
+		left: 65px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_12 {
+		top: 1120px;
+		left: 385px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_13 {
+		top: 1280px;
+		left: 225px;
+	}
 }
 
 /* Small Devices, Tablets */
 /* XS-EXTRA-SMALL (481-768)*/
 @media only screen and (max-width : 768px) {
-	/* ----------Main Slider---------- */
+/* ----------Main Slider---------- */
 	.main_header .main_slider .slider_wrap .owl-slide{
 		height: 600px;
 	}
@@ -310,7 +439,7 @@
 		right: 50%;
 		margin-right: -96px;
 	}				
-	/* ----------Navbar---------- */
+/* ----------Navbar---------- */
 	.main_header .navbar_wrap ul {
 		width: 150px;
 	}
@@ -318,7 +447,7 @@
 		line-height: 18px;
 		font-size: 13px;
 	}
-	/* ----------SECTION ALL---------- */
+/* ----------SECTION ALL---------- */
 	section h2{
 			font-size: 30px;
 	}
@@ -336,7 +465,7 @@
 		letter-spacing: 0.05em;
 		font-size: 20px;
 	}
-	/* ----------Rates---------- */
+/* ----------Rates---------- */
 	.s_rates	.rate_wrap {
 		margin: 50px 40px 0;
 	}
@@ -346,10 +475,86 @@
 	.s_rates	.rate_wrap ul li:before {
 		width: 50px;
 	}
-	
+/* ---------- Portfolio Blocks ---------- */
+.s_portfolio .grid_wrap {
+		min-height: 1100px;
+		width: 481px;
+		margin: 0 auto;
+	}
+.s_portfolio .grid_wrap .block {
+		width: 200px;
+		height: 200px;
+	}
+.s_portfolio .grid_wrap .overlay_rot {
+		width: 141px;
+		height: 141px;
+	}
+.s_portfolio .grid_wrap .overlay_rot .holder {
+		top: 77px;
+		left: 77px;
+		width: 75px;
+		height: 75px;
+	}
+.s_portfolio .grid_wrap .overlay h4 {
+	margin-top: 20px;
+	font-size: 20px;
+}
+/* ---------- Portfolio Blocks ---------- */
+.s_portfolio .grid_wrap	.top_block .block_1 {
+		top: 0;
+		left: 140px;
+	}
+.s_portfolio .grid_wrap	.top_block .block_2 {
+		top: 110px;
+		left: 30px;
+	}
+.s_portfolio .grid_wrap	.top_block .block_3 {
+		top: 110px;
+		left: 250px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_4 {
+		top: 220px;
+		left: 140px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_5 {
+		top: 330px;
+		left: 30px;
+	}
+.s_portfolio .grid_wrap	.left_block .block_6 {
+		top: 330px;
+		left: 250px;
+	}
+.s_portfolio .grid_wrap	.middle_block .block_7 {
+		top: 440px;
+		left: 140px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_8 {
+		top: 550px;
+		left: 30px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_9 {
+		top: 550px;
+		left: 250px;
+	}
+.s_portfolio .grid_wrap	.right_block .block_10 {
+		top: 660px;
+		left: 140px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_11 {
+		top: 770px;
+		left: 30px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_12 {
+		top: 770px;
+		left: 250px;
+	}
+.s_portfolio .grid_wrap	.bottom_block .block_13 {
+		top: 880px;
+		left: 140px;
+	}	
 
 
-	/*Disable Animation on Mobile Devices*/
+/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
@@ -376,7 +581,7 @@
 /* Extra Small Devices, Phones */
 /* XS-OMG (321-480)*/
 @media only screen and (max-width : 480px) {
-	/* ----------Main Slider---------- */
+/* ----------Main Slider---------- */
 	.main_header .main_slider .slider_wrap .owl-slide{
 		height: 440px;
 	}
@@ -427,7 +632,7 @@
 	.main_header .main_slider .slider_wrap .owl-theme .owl-nav .owl-next {
 		top: 91%;
 	}			
-	/* ----------Navbar---------- */
+/* ----------Navbar---------- */
 	.main_header .navbar_wrap ul {
 		width: 120px;
 	}
@@ -438,7 +643,7 @@
 	.main_header .navbar_wrap ul li a {
 		padding: 15px 5px;
 	}
-	/* ----------SECTION ALL---------- */
+/* ----------SECTION ALL---------- */
 	section h2{
 			font-size: 24px;
 	}
@@ -464,11 +669,63 @@
 	.s_callback .callback_form .message	textarea {
 		padding: 30px;
 	}
-	
+/* ---------- Portfolio Blocks ---------- */
+	.s_portfolio .grid_wrap {
+			min-height: 1100px;
+			width: 100%;
+		}
+	.s_portfolio .grid_wrap .block {
+			width: 300px;
+			height: 300px;
+			position: relative;
+			margin: 20px auto;
+
+		}
+	.s_portfolio .grid_wrap .overlay_rot {
+			width: 213px;
+			height: 213px;
+		}
+	.s_portfolio .grid_wrap .overlay_rot .holder {
+			top: 149px;
+			left: 149px;
+			width: 75px;
+			height: 75px;
+		}
+	.s_portfolio .grid_wrap .overlay h4 {
+		margin-top: 80px;
+		font-size: 24px;
+	}
+	/* ---------- Portfolio Blocks ---------- */
+	.s_portfolio .grid_wrap	.top_block .block_1,
+	.s_portfolio .grid_wrap	.top_block .block_2,
+	.s_portfolio .grid_wrap	.top_block .block_3,
+	.s_portfolio .grid_wrap	.left_block .block_4,
+	.s_portfolio .grid_wrap	.left_block .block_5,
+	.s_portfolio .grid_wrap	.left_block .block_6,
+	.s_portfolio .grid_wrap	.middle_block .block_7,
+	.s_portfolio .grid_wrap	.right_block .block_8,
+	.s_portfolio .grid_wrap	.right_block .block_9,
+	.s_portfolio .grid_wrap	.right_block .block_10,
+	.s_portfolio .grid_wrap	.bottom_block .block_11,
+	.s_portfolio .grid_wrap	.bottom_block .block_12,
+	.s_portfolio .grid_wrap	.bottom_block .block_13	{
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+		}
+	.s_portfolio .grid_wrap	.right_block .block_8,
+	.s_portfolio .grid_wrap	.right_block .block_9,
+	.s_portfolio .grid_wrap	.right_block .block_10,
+	.s_portfolio .grid_wrap	.bottom_block .block_11,
+	.s_portfolio .grid_wrap	.bottom_block .block_12,
+	.s_portfolio .grid_wrap	.bottom_block .block_13	{
+		display: none;
+	}
 	
 }
 
-
+/* ---------- SPECIAL WIDTH ---------- */
 /* ----------- 675 special for button ---------- */
 @media only screen and (max-width : 675px) {
 	.s_callback .callback_form .btn {
@@ -541,35 +798,4 @@
 	.s_rates	.rate_wrap .price_wrap .price {
 		line-height: 60px;
 	}
-}
-
-
-
-
-
-/*==========  Mobile First Method  ==========*/
-
-/* Custom, iPhone Retina */
-@media only screen and (min-width : 320px) {
-
-}
-
-/* Extra Small Devices, Phones */
-@media only screen and (min-width : 480px) {
-
-}
-
-/* Small Devices, Tablets */
-@media only screen and (min-width : 768px) {
-
-}
-
-/* Medium Devices, Desktops */
-@media only screen and (min-width : 992px) {
-
-}
-
- /* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
 }

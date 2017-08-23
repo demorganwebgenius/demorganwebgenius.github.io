@@ -24,8 +24,6 @@ a
 	&:focus
 		text-decoration: none
 		color: $dark
-	
-
 html.js .loader
 	background: none repeat scroll 0 0 #ffffff
 	bottom: 0
@@ -49,7 +47,6 @@ html.js .loader
 		left: 50%
 		top: 50%
 		position: absolute
-
 body
 	font-family: $opensans, sans-serif
 	font-weight: normal
@@ -68,13 +65,11 @@ body textarea:focus:required:invalid
 body input:required:valid,
 body textarea:required:valid
 	color: green
-
 .hidden
 	display: none
 
 .main_wrap
 	background-color: $light
-
 h1
 	font-family: $proxima_black, sans-serif
 	font-size: 23px
@@ -83,7 +78,6 @@ h1
 	vertical-align: middle
 	margin: 0 4px
 	line-height: 30px
-
 .logo_wrap
 	display: table
 	a
@@ -93,7 +87,6 @@ h1
 	h1
 		display: table-cell
 		vertical-align: middle
-
 .scroll
 	margin: auto
 	position: absolute
@@ -236,10 +229,10 @@ h1
 				.text 
 					display: table
 					width: 30%
-					height: 40%
-					margin: auto
+					height: 45%
+					margin: 0 auto
 					position: absolute
-					top: 25%
+					top: 27%
 					left: 0
 					bottom: 0
 					right: 0
@@ -322,9 +315,7 @@ h1
 						// 	content: ""
 						// 	border-top: 50px solid silver
 						// 	width: 50px
-						// 	border-bottom: 50px solid silver
-					
-
+						// 	border-bottom: 50px solid silver				
 //-----Sections-----//
 section
 	padding-top: 170px
@@ -352,6 +343,7 @@ section
 		margin: 30px auto
 	&.s_long
 		padding-top: 200px
+
 .s_features
 	min-height: 800px 
 	.icon_wrap
@@ -361,6 +353,7 @@ section
 			margin-top: 30px
 		p
 			margin-top: 20px
+
 .s_about
 	min-height: 700px
 	background-image: url("../img/about/bg_about.jpg")
@@ -391,11 +384,93 @@ section
 			color: #1ab4ef
 
 .s_portfolio
+	min-height: 600px
 	.grid_wrap
+		min-height: 1200px
 		position: relative
 		margin: 0 -15px
+		figure
+			position: absolute
+			top: 0
+			bottom: 0
+			left: 0
+			right: 0
+		.top_block
+			.block_1
+				top: 0
+				bottom: 0
+				left: 0
+				right: 0
+			.block_2
+				top: 0
+				bottom: 0
+				left: 400px
+				right: 0
+			.block_3
+				top: 0
+				bottom: 0
+				left: 800px
+				right: 0
+		.left_block
+			.block_4
+				top: 200px
+				bottom: 0
+				left: 200px
+				right: 0
+			.block_5
+				top: 400px
+				bottom: 0
+				left: 0
+				right: 0
+			.block_6
+				top: 600px
+				bottom: 0
+				left: 200px
+				right: 0
+		.middle_block
+			.block_7
+				top: 400px
+				bottom: 0
+				left: 400px
+				right: 0
+		.right_block
+			.block_8
+				top: 200px
+				bottom: 0
+				left: 600px
+				right: 0
+			.block_9
+				top: 400px
+				bottom: 0
+				left: 800px
+				right: 0
+			.block_10
+				top: 600px
+				bottom: 0
+				left: 600px
+				right: 0
+		.bottom_block
+			.block_11
+				top: 800px
+				bottom: 0
+				left: 0
+				right: 0
+			.block_12
+				top: 800px
+				bottom: 0
+				left: 400px
+				right: 0
+			.block_13
+				top: 800px
+				bottom: 0
+				left: 800px
+				right: 0			
+
 		.block
+			// position: relative
 			height: 369px
+			width: 369px
+
 		.overlay_rot
 			transform: rotate(45deg)
 			width: 260px
@@ -407,113 +482,41 @@ section
 			bottom: 0
 			left: 0
 			right: 0
+			background-color: transparent
+			&:hover
+				background-color: rgba(32,32,32,.8)
 			&:hover .holder
+				display: block
+			&:hover .overlay
 				display: block
 			.holder
 				position: absolute
 				display: none
 				transform: rotate(-45deg)
 				z-index: 1
-				top: 197px
-				left: 196px
+				top: 196px
+				left: 195px
 				width: 75px
 				height: 75px
 				background-image: url("../img/portfolio/overlay_btn.png")
 				&:hover
 					background-image: url("../img/portfolio/overlay_btn_hover.png")
 		.overlay
-			display: none
+			z-index: 1
+			//display: none
+			transform: rotate(-45deg) scale(.8)
 			h4
 				font-family: $proxima_black, sans-serif
-				font-size: 24px
-				line-height: 22px
+				font-size: 26px
+				line-height: 1.3
 				letter-spacing: 0.05em
 				color: $light
 				text-transform: uppercase
-				margin-top: 175px
+				margin-top: 100px
 			.separator
 				margin: 15px 0
 			
-		figure
-			position: absolute
-			top: 0
-			bottom: 0
-			left: 0
-			right: 0
-.s_portfolio
-	min-height: 600px
-	.grid_wrap
-		min-height: 1200px
-		.top_block
-			.block_1
-				top: 0
-				bottom: 0
-				left: 0
-				right: 800px
-			.block_2
-				top: 0
-				bottom: 0
-				left: 0
-				right: 0
-			.block_3
-				top: 0
-				bottom: 0
-				left: 800px
-				right: 0
-		.left_block
-			.block_4
-				top: 200px
-				bottom: 0
-				left: 0
-				right: 400px
-			.block_5
-				top: 400px
-				bottom: 0
-				left: 0
-				right: 800px
-			.block_6
-				top: 600px
-				bottom: 0
-				left: 0
-				right: 400px
-		.middle_block
-			.block_7
-				top: 400px
-				bottom: 0
-				left: 0
-				right: 0
-		.right_block
-			.block_8
-				top: 200px
-				bottom: 0
-				left: 400px
-				right: 0
-			.block_9
-				top: 400px
-				bottom: 0
-				left: 800px
-				right: 0
-			.block_10
-				top: 600px
-				bottom: 0
-				left: 400px
-				right: 0
-		.bottom_block
-			.block_11
-				top: 800px
-				bottom: 0
-				left: 0
-				right: 800px
-			.block_12
-				top: 800px
-				bottom: 0
-				left: 0
-				right: 0
-			.block_13
-				top: 800px
-				bottom: 0
-				left: 800px
-				right: 0			
+
 
 .s_testimonials
 	min-height: 400px
@@ -541,7 +544,7 @@ section
 				font-style: italic
 				letter-spacing: 0.1em
 				margin-top: 30px
-					
+
 .s_rates
 	.rate_wrap
 		border: 1px solid $dark
@@ -611,7 +614,8 @@ section
 			font-size: 30px
 			// color: $special
 			line-height: 80px
-			
+	.note
+		margin-top: 20px		
 
 .s_stats
 	min-height: 500px
@@ -640,6 +644,7 @@ section
 		font-weight: 600
 		margin-top: 10px
 		line-height: 1
+
 // .s_news
 // 	padding-top: 200px
 // 	.grid_wrap
@@ -705,6 +710,7 @@ section
 // 				.autor_time
 // 					letter-spacing: 0.075em
 // 					color: #7c7c7c
+
 .s_team
 	.team_wrap
 		.overlay
