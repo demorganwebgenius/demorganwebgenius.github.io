@@ -543,7 +543,75 @@ section
 				margin-top: 30px
 					
 .s_rates
-	
+	.rate_wrap
+		border: 1px solid $dark
+		margin: 100px 50px 0
+		.name_wrap,
+		.price_wrap
+			width: 100%
+			height: 80px
+			line-height: 80px
+			border: 2px solid $dark
+			background-color: $light
+			color: $dark
+			font-size: 30px
+		.name_wrap
+			transform: scale(1.1)
+			span
+				color: $special
+			h3
+				font-size: 30px
+		.price_wrap
+			margin-top: 30px
+			&:hover
+				transform: scale(1.1)
+			a
+				display: block
+				width: 100%
+				height: 80px
+		ul
+			margin-top: 30px
+			list-style-type: none
+			text-align: left
+			li
+				position: relative
+				padding-left: 150px
+				line-height: 40px
+				font-family: $proxima, sans-serif
+				font-size: 14px
+				color: $dark
+				text-transform: uppercase
+				width: 100%
+				display: block
+				height: 40px
+				background-color: transparent
+				&:hover
+					background-color: $special
+					color: $light
+					font-size: 16px
+				&:hover:before
+					background-color: $special
+					transform: scale(1.2)
+				&:before
+					content: ""
+					width: 120px
+					height: 40px
+					position: absolute
+					left: 0px
+					top: 0px
+					background-color: $dark
+					background-repeat: no-repeat
+					background-position: center center
+				&.li_yes:before
+					background-image: url("../img/rates/check.png")
+				&.li_no:before
+					background-image: url("../img/rates/none.png")
+		.price
+			font-family: $proxima_black, sans-serif
+			font-size: 30px
+			// color: $special
+			line-height: 80px
+			
 
 .s_stats
 	min-height: 500px

@@ -93,6 +93,7 @@ $(function() {
 	});
 	//Scroll2id
 	$(".top_navbar .navbar_wrap ul a").mPageScroll2id();
+	$(".s_rates .rate_wrap .price_wrap a").mPageScroll2id();
 	$("section  .scroll2id").mPageScroll2id();
 	$(".main_slider .slide_btn .button").mPageScroll2id();
 	//SVG Fallback
