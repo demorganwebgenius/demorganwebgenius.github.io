@@ -146,6 +146,7 @@ $(function() {
 	$(".anim_sid").animated("slideInDown", "fadeOut");
 	//shake
 	$(".anim_sha").animated("shake", "fadeOut");
+	$(".anim_pul").animated("tada", "fadeOut");
 });
 
 $(window).load(function() {

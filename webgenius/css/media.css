@@ -86,7 +86,7 @@
 	.main_header .main_slider .slider_wrap .slider_descr .separator {
 		height: 8px;
 		width: 34px;
-		margin: 20px auto
+		margin: 20px auto;
 	}
 /* ----------SECTION ALL---------- */
 	section {
@@ -125,10 +125,15 @@
 		width: 70px;
 	}
 /* ----------Portfolio---------- */
+.s_portfolio .grid_wrap{
+		min-height: 1000px;
+	}
 .s_portfolio .grid_wrap .block {
 		width: 300px;
 		height: 300px;
+		margin: 50px -15px 50px;
 	}
+
 .s_portfolio .grid_wrap .overlay_rot {
 		width: 213px;
 		height: 213px;
@@ -305,7 +310,9 @@
 /* ----------Portfolio---------- */
 .s_portfolio .grid_wrap {
 		min-height: 1650px;
+		margin: 40px -15px 0;
 	}
+		
 /* ---------- Portfolio Blocks ---------- */
 .s_portfolio .grid_wrap	.top_block .block_1 {
 		top: 0;
@@ -479,7 +486,7 @@
 .s_portfolio .grid_wrap {
 		min-height: 1100px;
 		width: 481px;
-		margin: 0 auto;
+		margin: 50px auto 0;
 	}
 .s_portfolio .grid_wrap .block {
 		width: 200px;
@@ -826,7 +833,7 @@
 		height: 60px;
 	}
 	.s_rates	.rate_wrap ul li {
-		padding-left: 50px;
+		padding-left: 45px;
 		font-size: 14px;
 		text-transform: none;
 		letter-spacing: 0.0em;
