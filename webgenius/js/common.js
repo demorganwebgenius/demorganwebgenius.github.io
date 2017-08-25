@@ -106,22 +106,43 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$(".callback_form").submit(function() { //Change
 		var th = $(this);
+		//console.log($("this input[name='Имя']").value)
+		// if(th.input[name="Имя"].lenght < 4)
+		// {
+		// 	alert("Имя слишком короткое");
+		// }
 		$.ajax({
 			type: "POST",
 			url: "mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			//alert("Thank you!");
 			setTimeout(function() {
 				// Done Functions
+				$('.popup_window').css("display", "block");			
+				$('.popup_wrap').css("display", "block");	
+				//
 				th.trigger("reset");
 			}, 1000);
 		});
 		return false;
 	});
 
+	// ----- Pop Up -----//
+	// $(".myButton").click(function() {
+	// 		$('.popup_window').css("display", "block");			
+	// 		$('.popup_wrap').css("display", "block");	
+	// 	});
+	$(".popup_close, .popup_wrap").click(function() {
+			$('.popup_window').css("display", "none");			
+			$('.popup_wrap').css("display", "none");	
+		});
+	// function show(state){
+	// 	$('window').style.display = state;			
+	// 	$('wrap').style.display = state; 			
+	// }
 	//Chrome Smooth Scroll
 	try {
 		$.browserSelector();

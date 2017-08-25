@@ -59,12 +59,12 @@ body
 	color: $dark
 	letter-spacing: 0.05em
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: red
-body input:required:valid,
-body textarea:required:valid
-	color: green
+// body input:focus:required:invalid,
+// body textarea:focus:required:invalid
+// 	color: $special
+// body input:required:valid,
+// body textarea:required:valid
+// 	color: #fff
 .hidden
 	display: none
 
@@ -139,10 +139,18 @@ h1
 		z-index: 999
 		border-bottom: 2px solid $dark
 		box-sizing: border-box
+
 	.logo_wrap
-		padding: 20px 0
+		padding: 10px 0
 		img
 			margin: 0 5px
+		.number_wrap
+			width: 100%
+			p
+				padding-left: 40px
+				font-size: 20px
+				font-family: $proxima_black
+
 	.navbar_wrap
 		ul
 			list-style-type: none
@@ -150,7 +158,8 @@ h1
 			text-align: right
 			li
 				display: inline-block
-				line-height: 33px
+				// line-height: 33px
+				line-height: 30px
 				font-family: $proxima_black, sans-serif
 				font-size: 15px
 				color: $dark
@@ -340,6 +349,7 @@ section
 		line-height: 22px
 	.s_descr
 		font-size: 20px
+		line-height: 1.5
 	.separator
 		margin: 30px auto
 	&.s_long
@@ -830,15 +840,15 @@ section
 		margin: 50px auto 0
 		.contact_info
 			margin-top: 30px
-			.address,
-			.email
+			.text,
+			.title
 				font-family: $opensans, sans-serif
 				font-size: 14px
 				line-height: 18px
 				letter-spacing: 0.075em
 				color: $light
-			.email
-				margin-top: 30px
+			.title
+				margin-top: 10px
 	.callback_form
 		// position: relative
 		input
@@ -855,9 +865,16 @@ section
 			padding: 0 100px
 			&:focus
 				outline: none
-				text-align: left
 				border-bottom: 1px solid $special
 				color: $light
+				&:required
+					color: $light
+			&:required
+				border-bottom: 1px solid $special
+
+				&:invalid
+					box-shadow: none
+					// color: $special
 		.name
 			input
 				width: 239px
@@ -924,7 +941,20 @@ section
 				border-color: $special transparent transparent $special 
 			&:hover:before
 				border-color: $special $special transparent transparent
-
+			.btn_send
+				background-color: transparent
+				width: 98%
+				margin: 0 auto
+				height: 100px
+				line-height: 100px
+				box-sizing: border-box
+				font-family: $proxima_black, sans-serif
+				text-transform: uppercase
+				font-size: 24px
+				color: $light
+				cursor: pointer
+				outline: none
+				border: none
 .main_footer
 	background-color: $dark
 	color: $light
@@ -955,4 +985,54 @@ section
 			background-image: url("../img/about/icon/hover_bg.png")
 			color: #1ab4ef
 
-			
+
+
+.popup_wrap
+	display: none
+	opacity: 0.8
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	padding: 16px
+	background-color: rgba(1, 1, 1, 0.725)
+	z-index: 100
+	overflow: auto
+.popup_window
+	width: 400px
+	height: 400px
+	margin: auto
+	display: none
+	background: #fff url("../img/thank_you.png")
+	background-position: center bottom
+	background-repeat: no-repeat
+	// background-size: 400px 310px
+	z-index: 200
+	position: fixed
+	left: 0
+	right: 0
+	top: 0
+	bottom: 0
+	// padding: 16px
+	border-radius: 5px
+	color: $dark
+	text-align: center
+
+	// transform: rotate(45deg)
+	.popup_close
+		float: right	
+		cursor: pointer
+		margin: 16px
+		// transform: rotate(-45deg)
+	.popup_msg
+		font-size: 24px
+		font-family: $proxima_black, sans-serif
+		text-transform: uppercase
+		margin: 16px
+		line-height: 1.4
+		color: $special
+		// transform: rotate(-45deg)
+		// transform-origin: 50% 50%
+	.thank_you
+

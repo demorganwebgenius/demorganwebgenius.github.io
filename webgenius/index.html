@@ -8,7 +8,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Заголовок</title>
+	<title>Web Genius</title>
 	<meta name="description" content="">
 
 	<link rel="shortcut icon" href="img/favicon/WG_logo.ico" type="image/x-icon">
@@ -47,6 +47,9 @@
 								<img src="img/WG_logo_black.png" alt="Logotype">
 								<h1>WebGenius</h1>
 							</a>
+							<div class="number_wrap">
+								<p>068 521 05 50</p>
+							</div>
 						</div>
 						<div class="navbar_wrap col-lg-10">
 							<ul>
@@ -54,7 +57,7 @@
 								<li><a href="#main_slider">В начало</a></li>
 								<li><a href="#s_features">Преимущества</a></li>
 								<li><a href="#s_about">О нас</a></li>
-								<li><a href="#s_portfolio">Work</a></li>
+								<li><a href="#s_portfolio">Инструменты</a></li>
 								<li><a href="#s_rates">Тарифы</a></li>
 								<li><a href="#s_team">Команда</a></li>
 								<li><a href="#s_callback">Контакты</a></li>
@@ -184,7 +187,7 @@
 			<div class="container">
 				<h2 class="anim_fid">Что мы используем</h2>
 				<img class="anim_fi separator" src="img/separator_black.png" alt="Separator">
-				<p class="s_descr anim_fiu">В процессе создания проекта команда WebGenius использует самые современные инструменты разработки, дизайна и рекламного продвижения, а так же популярные фреймворки и библиотеки. Выбирая нас вы идете в ногу со временем и можете быть уверены в технической актуалности конечного продукта.</p>
+				<p class="s_descr anim_fiu">В процессе создания проекта команда WebGenius использует самые современные инструменты разработки, дизайна и рекламного продвижения, а так же популярные фреймворки и библиотеки. Выбирая нас вы идете в ногу со временем и можете быть уверены в технической актуалньости конечного продукта.</p>
 				<div class="grid_wrap" id="s_portfolio">
 					<div class="top_block">
 						<figure class="block block_1 anim_fi">
@@ -609,7 +612,7 @@
 			<div class="container">
 				<h2 class="anim_fid">Наша команда</h2>
 				<img class="anim_fi separator" src="img/separator_black.png" alt="Separator">
-				<p class="anim_fiu">WebGenius - это сплочённый колектив высококлассных специалистов. Нас обьединяют целеустремленность и трудолюбие. Слаженность наших действий и ответственность за результат позволяют создавать продукты высочайшего качества. Мы всегда работаем для наших клиентов с полной отдачей и дорожим нашей репутацией. Доверьтесь нам - и ваш проект окажется в надежных руках.</p>
+				<p class="anim_fiu">WebGenius - это сплочённый колектив высококлассных специалистов. Нас объединяют целеустремленность и трудолюбие. Слаженность наших действий и ответственность за результат позволяют создавать продукты высочайшего качества. Мы всегда работаем для наших клиентов с полной отдачей и дорожим нашей репутацией. Доверьтесь нам - и ваш проект окажется в надежных руках.</p>
 	 			<div class="team_wrap anim_fi">
 	 				<div class="col-lg-3 col-md-6 col-sm-6">
 	 					<figure class="photo">
@@ -720,33 +723,72 @@
 			</div>
  			<div id="s_callback" class="form_wrap">
  				<form action="#" class="callback_form" target="_blank" method="post">
+ 					<!-- Hidden Required Fields -->
+ 					<input type="hidden" name="project_name" value="WebGenius">
+ 					<input type="hidden" name="admin_email" value="demorganwebgenius@gmail.com">
+ 					<input type="hidden" name="form_subject" value="Форма обратной связи">
+ 					<!-- END Hidden Required Fields -->
  					<div class="name">
  						<!-- <div class="overlay"></div> -->
- 						<input type="text" name="name" placeholder="Имя*"/>
+ 						<input type="text" name="Имя" placeholder="Имя *" minlength="4" required/>
  					</div>
  					<div class="email">
- 						<input type="text" name="email" placeholder="Email"/>
+ 						<input type="text" name="E-mail" placeholder="Email"/>
  					</div>
  					<div class="phone">
- 						<input type="text" name="phone" placeholder="Телефон*"/>
+ 						<input type="text" name="Телефон" placeholder="Телефон *" minlength="7" required/>
  					</div>
  					<div class="subject">
- 						<input type="text" name="subject" placeholder="Тема сообщения"/>
+ 						<input type="text" name="Тема_сообщения" placeholder="Тема сообщения"/>
  					</div>
  					<div class="message">
- 						<textarea name="message" placeholder="Ваше сообщение"></textarea>
+ 						<textarea name="Сообщение" placeholder="Ваше сообщение"></textarea>
  					</div>
- 					<div class="btn">Отправить</div>
+ 					<!-- <div class="btn">Отправить</div> -->
+ 					<div class="btn">
+ 						<button class="btn_send">Отправить</button>
+ 					</div>
+ 					
  				</form>
 				<div class="contact_info">
-					<img class="separator" src="img/separator_white.png" alt="Separator">
-					<p class="address"><strong>WebGenius studio</strong></p>
-					<p class="email">Наш почтовый ящик:<br>demorganwebgenius@gmail.com<br>Телефон:<br>
-					095 644 88 98</p>
+					<!-- <img class="separator" src="img/separator_white.png" alt="Separator"> -->
+					<p class="text"><strong>Наш почтовый ящик:</strong> demorganwebgenius@gmail.com</p>
+					<p class="title"><strong>Прием заказов:</strong></p>
+					<p class="text">068 521 05 50
+					<br>095 644 88 98
+					<br><strong>Skype:</strong>
+					<br>dallasfuckinmonkey</p>
+					<p class="title"><strong>Техническая поддержка:</strong></p>
+					<p class="text">095 202 93 24
+					<br><strong>Skype:</strong>
+					<br>Rostislav Demorgan</p>
+					</p>
 				</div>
+				<!-- <ul>
+					<li>Прием заказов:</li>
+					<li>068 521 05 50</li>
+					<li>095 644 88 98</li>
+					<li>Skype:</li>
+					<li>dallasfuckinmonkey</li>
+					<li>Техническая поддержка:</li>
+					<li>095 202 93 24</li>
+					<li>Skype:</li>
+					<li>Rostislav Demorgan</li>
+				</ul> -->
  			</div>
  			<a href="#main_slider" class="scroll scroll_jump scroll2id""></a>
 		</section>
+
+
+		<div class="popup_wrap"></div>
+		<div class="popup_window">
+			<!-- Картинка крестика-->
+			<img class="popup_close" src="http://sergey-oganesyan.ru/wp-content/uploads/2014/01/close.png">
+			<div class="clearfix"></div>
+			<p class="popup_msg">Ваша заявка принята</p>
+		</div>
+
+
 		<footer class="main_footer" id="main_footer">
 			<div class="container">
 				<div class="logo_wrap">
@@ -784,6 +826,9 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	
+	
+
+
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
 	<script src="libs/scroll2id/PageScroll2id.min.js"></script>

@@ -48,14 +48,6 @@ body {
   color: #212121;
   letter-spacing: 0.05em; }
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid {
-  color: red; }
-
-body input:required:valid,
-body textarea:required:valid {
-  color: green; }
-
 .hidden {
   display: none; }
 
@@ -130,16 +122,22 @@ h1 {
   border-bottom: 2px solid #212121;
   box-sizing: border-box; }
 .main_header .logo_wrap {
-  padding: 20px 0; }
+  padding: 10px 0; }
   .main_header .logo_wrap img {
     margin: 0 5px; }
+  .main_header .logo_wrap .number_wrap {
+    width: 100%; }
+    .main_header .logo_wrap .number_wrap p {
+      padding-left: 40px;
+      font-size: 20px;
+      font-family: "ProximaNovaBlack"; }
 .main_header .navbar_wrap ul {
   list-style-type: none;
   cursor: pointer;
   text-align: right; }
   .main_header .navbar_wrap ul li {
     display: inline-block;
-    line-height: 33px;
+    line-height: 30px;
     font-family: "ProximaNovaBlack", sans-serif;
     font-size: 15px;
     color: #212121;
@@ -320,7 +318,8 @@ section {
     letter-spacing: 0.06em;
     line-height: 22px; }
   section .s_descr {
-    font-size: 20px; }
+    font-size: 20px;
+    line-height: 1.5; }
   section .separator {
     margin: 30px auto; }
   section.s_long {
@@ -684,15 +683,15 @@ section {
     margin: 50px auto 0; }
     .s_callback .form_wrap .contact_info {
       margin-top: 30px; }
-      .s_callback .form_wrap .contact_info .address,
-      .s_callback .form_wrap .contact_info .email {
+      .s_callback .form_wrap .contact_info .text,
+      .s_callback .form_wrap .contact_info .title {
         font-family: "OpenSans", sans-serif;
         font-size: 14px;
         line-height: 18px;
         letter-spacing: 0.075em;
         color: #f5f5f5; }
-      .s_callback .form_wrap .contact_info .email {
-        margin-top: 30px; }
+      .s_callback .form_wrap .contact_info .title {
+        margin-top: 10px; }
   .s_callback .callback_form input {
     outline: none;
     height: 120px;
@@ -707,9 +706,14 @@ section {
     padding: 0 100px; }
     .s_callback .callback_form input:focus {
       outline: none;
-      text-align: left;
       border-bottom: 1px solid #cd2929;
       color: #f5f5f5; }
+      .s_callback .callback_form input:focus:required {
+        color: #f5f5f5; }
+    .s_callback .callback_form input:required {
+      border-bottom: 1px solid #cd2929; }
+      .s_callback .callback_form input:required:invalid {
+        box-shadow: none; }
   .s_callback .callback_form .name input {
     width: 239px;
     text-align: center;
@@ -771,6 +775,20 @@ section {
       border-color: #cd2929 transparent transparent #cd2929; }
     .s_callback .callback_form .btn:hover:before {
       border-color: #cd2929 #cd2929 transparent transparent; }
+    .s_callback .callback_form .btn .btn_send {
+      background-color: transparent;
+      width: 98%;
+      margin: 0 auto;
+      height: 100px;
+      line-height: 100px;
+      box-sizing: border-box;
+      font-family: "ProximaNovaBlack", sans-serif;
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #f5f5f5;
+      cursor: pointer;
+      outline: none;
+      border: none; }
 
 .main_footer {
   background-color: #212121;
@@ -801,5 +819,47 @@ section {
     .main_footer .icon:hover {
       background-image: url("../img/about/icon/hover_bg.png");
       color: #1ab4ef; }
+
+.popup_wrap {
+  display: none;
+  opacity: 0.8;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 16px;
+  background-color: rgba(1, 1, 1, 0.725);
+  z-index: 100;
+  overflow: auto; }
+
+.popup_window {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  display: none;
+  background: #fff url("../img/thank_you.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  z-index: 200;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-radius: 5px;
+  color: #212121;
+  text-align: center; }
+  .popup_window .popup_close {
+    float: right;
+    cursor: pointer;
+    margin: 16px; }
+  .popup_window .popup_msg {
+    font-size: 24px;
+    font-family: "ProximaNovaBlack", sans-serif;
+    text-transform: uppercase;
+    margin: 16px;
+    line-height: 1.4;
+    color: #cd2929; }
 
 /*# sourceMappingURL=main.css.map */
