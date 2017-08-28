@@ -6,8 +6,8 @@ $(function() {
 					0 : {
 						items : 1,
 						// autoWidth: true,
-						//autoplay: true,
-						//autoplayTimeout: 5000,
+						// autoplay: true,
+						// autoplayTimeout: 8000,
 						nav: true,
 						navText: [""],
 						loop: true,
@@ -35,7 +35,7 @@ $(function() {
 		responsive : {
 					0 : {
 						items : 1,
-						//autoplay: true,
+						autoplay: true,
 						autoplayTimeout: 8000,
 						loop: true,
 						dots: true,
@@ -172,7 +172,6 @@ $(function() {
 
 $(window).load(function() {
 
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(400).fadeOut("slow");
+	
 
 });

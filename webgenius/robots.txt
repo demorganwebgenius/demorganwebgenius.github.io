@@ -1,0 +1,19 @@
+User-agent: *
+Allow: /img/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /libs/
+Disallow: /sass/
+ 
+User-agent: Googlebot
+Allow: /
+ 
+User-agent: Yandex
+Allow: /img/
+Disallow: /js/
+Disallow: /css/
+Disallow: /fonts/
+Disallow: /libs/
+Disallow: /sass/
+Host: webgenius.com.ua
